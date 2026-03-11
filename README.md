@@ -19,12 +19,11 @@ uv run ruff-explain F401
 uv run ruff-explain ARG001 -o
 ```
 
-## Install
+## Run from source
 
 Run it from the repo with `uv`:
 
 ```bash
-uv sync
 uv run ruff-explain FAST001
 ```
 
