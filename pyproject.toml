@@ -1,6 +1,6 @@
 [project]
 name = "ruff-explain"
-version = "0.1.0"
+version = "1.0.0"
 description = "Render Ruff rule docs in the terminal or open them in a browser"
 readme = "README.md"
 authors = [
@@ -11,6 +11,12 @@ dependencies = [
     "rich>=14.3.3",
     "typer>=0.24.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/jakob1379/ruff-explain"
+Repository = "https://github.com/jakob1379/ruff-explain"
+Issues = "https://github.com/jakob1379/ruff-explain/issues"
+Changelog = "https://github.com/jakob1379/ruff-explain/releases"
 
 [project.scripts]
 ruff-explain = "ruff_explain:main"
