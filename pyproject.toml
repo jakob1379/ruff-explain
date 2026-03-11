@@ -1,0 +1,20 @@
+[project]
+name = "ruff-explain"
+version = "0.1.0"
+description = "Render Ruff rule docs in the terminal or open them in a browser"
+readme = "README.md"
+authors = [
+    { name = "Jakob Guldberg Aaes", email = "jakob1379@gmali.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "rich>=14.3.3",
+    "typer>=0.24.1",
+]
+
+[project.scripts]
+ruff-explain = "ruff_explain:main"
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
