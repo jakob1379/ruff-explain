@@ -164,22 +164,19 @@ def _extract_sections(article: HtmlNode) -> list[Section]:
     current = Section("Overview")
     saw_content = False
 
-    for child in article.children:
-        if isinstance(child, str):
+    for node in _iter_article_nodes(article):
+        if _should_skip_article_node(node):
             continue
-        if child.tag == "h1":
-            continue
-        if child.tag == "p" and _contains_tag(child, "small"):
-            continue
-        if child.tag in {"h2", "h3"}:
-            title = _collapse(_inline_text(child))
+
+        heading_title = _heading_from_article_node(node)
+        if heading_title is not None:
             if current.blocks:
                 sections.append(current)
-            current = Section(title)
+            current = Section(heading_title)
             saw_content = True
             continue
 
-        block = _extract_block(child)
+        block = _extract_block(node)
         if block is None:
             continue
 
@@ -195,23 +192,58 @@ def _extract_sections(article: HtmlNode) -> list[Section]:
 
 def _extract_block(node: HtmlNode) -> ParagraphBlock | ListBlock | CodeBlock | None:
     if node.tag == "p":
-        text = _collapse(_inline_text(node))
-        return ParagraphBlock(text) if text else None
+        return _paragraph_block(node)
     if node.tag in {"ul", "ol"}:
-        items = []
-        for child in node.children:
-            if isinstance(child, HtmlNode) and child.tag == "li":
-                text = _collapse(_inline_text(child))
-                if text:
-                    items.append(text)
-        return ListBlock(items) if items else None
-    if node.tag == "div" and _has_class(node, "highlight"):
-        code = _extract_code(node)
-        return CodeBlock(code) if code else None
-    if node.tag == "pre":
-        code = _extract_code(node)
-        return CodeBlock(code) if code else None
+        return _list_block(node)
+    if _is_code_node(node):
+        return _code_block(node)
     return None
+
+
+def _iter_article_nodes(article: HtmlNode) -> list[HtmlNode]:
+    nodes: list[HtmlNode] = []
+    for child in article.children:
+        if isinstance(child, HtmlNode):
+            nodes.append(child)
+    return nodes
+
+
+def _heading_from_article_node(node: HtmlNode) -> str | None:
+    if node.tag in {"h2", "h3"}:
+        return _collapse(_inline_text(node))
+    return None
+
+
+def _should_skip_article_node(node: HtmlNode) -> bool:
+    return node.tag == "h1" or (node.tag == "p" and _contains_tag(node, "small"))
+
+
+def _paragraph_block(node: HtmlNode) -> ParagraphBlock | None:
+    text = _collapse(_inline_text(node))
+    return ParagraphBlock(text) if text else None
+
+
+def _list_block(node: HtmlNode) -> ListBlock | None:
+    items: list[str] = []
+    for child in node.children:
+        if not isinstance(child, HtmlNode):
+            continue
+        if child.tag != "li":
+            continue
+        text = _collapse(_inline_text(child))
+        if not text:
+            continue
+        items.append(text)
+    return ListBlock(items) if items else None
+
+
+def _is_code_node(node: HtmlNode) -> bool:
+    return node.tag == "pre" or (node.tag == "div" and _has_class(node, "highlight"))
+
+
+def _code_block(node: HtmlNode) -> CodeBlock | None:
+    code = _extract_code(node)
+    return CodeBlock(code) if code else None
 
 
 def _extract_code(node: HtmlNode) -> str:
@@ -346,14 +378,6 @@ def _find_first(
             if found is not None:
                 return found
     return None
-
-
-def _walk(node: HtmlNode) -> list[HtmlNode]:
-    nodes = [node]
-    for child in node.children:
-        if isinstance(child, HtmlNode):
-            nodes.extend(_walk(child))
-    return nodes
 
 
 def _has_class(node: HtmlNode, class_name: str) -> bool:

@@ -29,3 +29,35 @@ build-backend = "uv_build"
 dev = [
     "pytest>=9.0.2",
 ]
+
+[tool.skylos.overrides."src/ruff_explain/render.py"]
+whitelist = [
+    "_DomParser.handle_starttag",
+    "_DomParser.handle_endtag",
+    "_DomParser.handle_startendtag",
+    "_DomParser.handle_data",
+    "handle_starttag",
+    "handle_endtag",
+    "handle_startendtag",
+    "handle_data",
+    "fetch_rule_page",
+    "build_rule_renderable",
+    "parse_rule_page",
+    "_extract_title",
+    "_extract_sections",
+    "_extract_block",
+    "_iter_article_nodes",
+    "_heading_from_article_node",
+    "_should_skip_article_node",
+    "_paragraph_block",
+    "_list_block",
+    "_is_code_node",
+    "_code_block",
+    "_extract_code",
+    "_render_header_panel",
+    "_render_section",
+    "_render_example_section",
+    "_first_child",
+    "_has_class",
+    "_contains_tag",
+]
