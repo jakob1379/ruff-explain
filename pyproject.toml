@@ -43,6 +43,7 @@ whitelist = [
     "fetch_rule_page",
     "build_rule_renderable",
     "parse_rule_page",
+    "_validate_rule_url",
     "_extract_title",
     "_extract_sections",
     "_extract_block",
