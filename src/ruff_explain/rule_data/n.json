@@ -1,0 +1,162 @@
+{
+  "N801": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.77",
+    "slug": "invalid-class-name",
+    "status": "Stable",
+    "summary": "Class name `{name}` should use CapWords convention"
+  },
+  "N802": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.77",
+    "slug": "invalid-function-name",
+    "status": "Stable",
+    "summary": "Function name `{name}` should be lowercase"
+  },
+  "N803": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.77",
+    "slug": "invalid-argument-name",
+    "status": "Stable",
+    "summary": "Argument name `{name}` should be lowercase"
+  },
+  "N804": {
+    "fix": "Sometimes",
+    "linter": "pep8-naming",
+    "since": "v0.0.77",
+    "slug": "invalid-first-argument-name-for-class-method",
+    "status": "Stable",
+    "summary": "First argument of a class method should be named `cls`"
+  },
+  "N805": {
+    "fix": "Sometimes",
+    "linter": "pep8-naming",
+    "since": "v0.0.77",
+    "slug": "invalid-first-argument-name-for-method",
+    "status": "Stable",
+    "summary": "First argument of a method should be named `self`"
+  },
+  "N806": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.89",
+    "slug": "non-lowercase-variable-in-function",
+    "status": "Stable",
+    "summary": "Variable `{name}` in function should be lowercase"
+  },
+  "N807": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.82",
+    "slug": "dunder-function-name",
+    "status": "Stable",
+    "summary": "Function name should not start and end with `__`"
+  },
+  "N811": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.82",
+    "slug": "constant-imported-as-non-constant",
+    "status": "Stable",
+    "summary": "Constant `{name}` imported as non-constant `{asname}`"
+  },
+  "N812": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.82",
+    "slug": "lowercase-imported-as-non-lowercase",
+    "status": "Stable",
+    "summary": "Lowercase `{name}` imported as non-lowercase `{asname}`"
+  },
+  "N813": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.82",
+    "slug": "camelcase-imported-as-lowercase",
+    "status": "Stable",
+    "summary": "Camelcase `{name}` imported as lowercase `{asname}`"
+  },
+  "N814": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.82",
+    "slug": "camelcase-imported-as-constant",
+    "status": "Stable",
+    "summary": "Camelcase `{name}` imported as constant `{asname}`"
+  },
+  "N815": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.89",
+    "slug": "mixed-case-variable-in-class-scope",
+    "status": "Stable",
+    "summary": "Variable `{name}` in class scope should not be mixedCase"
+  },
+  "N816": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.89",
+    "slug": "mixed-case-variable-in-global-scope",
+    "status": "Stable",
+    "summary": "Variable `{name}` in global scope should not be mixedCase"
+  },
+  "N817": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.82",
+    "slug": "camelcase-imported-as-acronym",
+    "status": "Stable",
+    "summary": "CamelCase `{name}` imported as acronym `{asname}`"
+  },
+  "N818": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.89",
+    "slug": "error-suffix-on-exception-name",
+    "status": "Stable",
+    "summary": "Exception name `{name}` should be named with an Error suffix"
+  },
+  "N999": {
+    "fix": "None",
+    "linter": "pep8-naming",
+    "since": "v0.0.248",
+    "slug": "invalid-module-name",
+    "status": "Stable",
+    "summary": "Invalid module name: '{name}'"
+  },
+  "NPY001": {
+    "fix": "Sometimes",
+    "linter": "NumPy-specific rules",
+    "since": "v0.0.247",
+    "slug": "numpy-deprecated-type-alias",
+    "status": "Stable",
+    "summary": "Type alias `np.{type_name}` is deprecated, replace with builtin type"
+  },
+  "NPY002": {
+    "fix": "None",
+    "linter": "NumPy-specific rules",
+    "since": "v0.0.248",
+    "slug": "numpy-legacy-random",
+    "status": "Stable",
+    "summary": "Replace legacy `np.random.{method_name}` call with `np.random.Generator`"
+  },
+  "NPY003": {
+    "fix": "Sometimes",
+    "linter": "NumPy-specific rules",
+    "since": "v0.0.276",
+    "slug": "numpy-deprecated-function",
+    "status": "Stable",
+    "summary": "`np.{existing}` is deprecated; use `np.{replacement}` instead"
+  },
+  "NPY201": {
+    "fix": "Sometimes",
+    "linter": "NumPy-specific rules",
+    "since": "v0.2.0",
+    "slug": "numpy2-deprecation",
+    "status": "Stable",
+    "summary": "`np.{existing}` will be removed in NumPy 2.0. {migration_guide}"
+  }
+}

@@ -1,0 +1,858 @@
+{
+  "S101": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.116",
+    "slug": "assert",
+    "status": "Stable",
+    "summary": "Use of `assert` detected"
+  },
+  "S102": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.116",
+    "slug": "exec-builtin",
+    "status": "Stable",
+    "summary": "Use of `exec` detected"
+  },
+  "S103": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.211",
+    "slug": "bad-file-permissions",
+    "status": "Stable",
+    "summary": "`os.chmod` setting a permissive mask `{mask:#o}` on file or directory"
+  },
+  "S104": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.116",
+    "slug": "hardcoded-bind-all-interfaces",
+    "status": "Stable",
+    "summary": "Possible binding to all interfaces"
+  },
+  "S105": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.116",
+    "slug": "hardcoded-password-string",
+    "status": "Stable",
+    "summary": "Possible hardcoded password assigned to: \"{}\""
+  },
+  "S106": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.116",
+    "slug": "hardcoded-password-func-arg",
+    "status": "Stable",
+    "summary": "Possible hardcoded password assigned to argument: \"{}\""
+  },
+  "S107": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.116",
+    "slug": "hardcoded-password-default",
+    "status": "Stable",
+    "summary": "Possible hardcoded password assigned to function default: \"{}\""
+  },
+  "S108": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.211",
+    "slug": "hardcoded-temp-file",
+    "status": "Stable",
+    "summary": "Probable insecure usage of temporary file or directory: \"{}\""
+  },
+  "S110": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.237",
+    "slug": "try-except-pass",
+    "status": "Stable",
+    "summary": "`try`-`except`-`pass` detected, consider logging the exception"
+  },
+  "S112": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.245",
+    "slug": "try-except-continue",
+    "status": "Stable",
+    "summary": "`try`-`except`-`continue` detected, consider logging the exception"
+  },
+  "S113": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.213",
+    "slug": "request-without-timeout",
+    "status": "Stable",
+    "summary": "Probable use of `{module}` call without timeout"
+  },
+  "S201": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "flask-debug-true",
+    "status": "Stable",
+    "summary": "Use of `debug=True` in Flask app detected"
+  },
+  "S202": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "tarfile-unsafe-members",
+    "status": "Stable",
+    "summary": "Uses of `tarfile.extractall()`"
+  },
+  "S301": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-pickle-usage",
+    "status": "Stable",
+    "summary": "`pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue"
+  },
+  "S302": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-marshal-usage",
+    "status": "Stable",
+    "summary": "Deserialization with the `marshal` module is possibly dangerous"
+  },
+  "S303": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-insecure-hash-usage",
+    "status": "Stable",
+    "summary": "Use of insecure MD2, MD4, MD5, or SHA1 hash function"
+  },
+  "S304": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-insecure-cipher-usage",
+    "status": "Stable",
+    "summary": "Use of insecure cipher, replace with a known secure cipher such as AES"
+  },
+  "S305": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-insecure-cipher-mode-usage",
+    "status": "Stable",
+    "summary": "Use of insecure block cipher mode, replace with a known secure mode such as CBC or CTR"
+  },
+  "S306": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-mktemp-usage",
+    "status": "Stable",
+    "summary": "Use of insecure and deprecated function (`mktemp`)"
+  },
+  "S307": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-eval-usage",
+    "status": "Stable",
+    "summary": "Use of possibly insecure function; consider using `ast.literal_eval`"
+  },
+  "S308": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-mark-safe-usage",
+    "status": "Stable",
+    "summary": "Use of `mark_safe` may expose cross-site scripting vulnerabilities"
+  },
+  "S310": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-url-open-usage",
+    "status": "Stable",
+    "summary": "Audit URL open for permitted schemes. Allowing use of `file:` or custom schemes is often unexpected."
+  },
+  "S311": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-non-cryptographic-random-usage",
+    "status": "Stable",
+    "summary": "Standard pseudo-random generators are not suitable for cryptographic purposes"
+  },
+  "S312": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-telnet-usage",
+    "status": "Stable",
+    "summary": "Telnet is considered insecure. Use SSH or some other encrypted protocol."
+  },
+  "S313": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xmlc-element-tree-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S314": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xml-element-tree-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S315": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xml-expat-reader-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S316": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xml-expat-builder-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S317": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xml-sax-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S318": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xml-mini-dom-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S319": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-xml-pull-dom-usage",
+    "status": "Stable",
+    "summary": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents"
+  },
+  "S320": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "0.12.0",
+    "slug": "suspicious-xmle-tree-usage",
+    "status": "Removed",
+    "summary": "Using `lxml` to parse untrusted data is known to be vulnerable to XML attacks"
+  },
+  "S321": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-ftp-lib-usage",
+    "status": "Stable",
+    "summary": "FTP-related functions are being called. FTP is considered insecure. Use SSH/SFTP/SCP or some other encrypted protocol."
+  },
+  "S323": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.258",
+    "slug": "suspicious-unverified-context-usage",
+    "status": "Stable",
+    "summary": "Python allows using an insecure context via the `_create_unverified_context` that reverts to the previous behavior that does not validate certificates or perform hostname checks."
+  },
+  "S324": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.212",
+    "slug": "hashlib-insecure-hash-function",
+    "status": "Stable",
+    "summary": "Probable use of insecure hash functions in `{library}`: `{string}`"
+  },
+  "S401": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-telnetlib-import",
+    "status": "Preview",
+    "summary": "`telnetlib` and related modules are considered insecure. Use SSH or another encrypted protocol."
+  },
+  "S402": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-ftplib-import",
+    "status": "Preview",
+    "summary": "`ftplib` and related modules are considered insecure. Use SSH, SFTP, SCP, or another encrypted protocol."
+  },
+  "S403": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-pickle-import",
+    "status": "Preview",
+    "summary": "`pickle`, `cPickle`, `dill`, and `shelve` modules are possibly insecure"
+  },
+  "S404": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-subprocess-import",
+    "status": "Preview",
+    "summary": "`subprocess` module is possibly insecure"
+  },
+  "S405": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-xml-etree-import",
+    "status": "Preview",
+    "summary": "`xml.etree` methods are vulnerable to XML attacks"
+  },
+  "S406": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-xml-sax-import",
+    "status": "Preview",
+    "summary": "`xml.sax` methods are vulnerable to XML attacks"
+  },
+  "S407": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-xml-expat-import",
+    "status": "Preview",
+    "summary": "`xml.dom.expatbuilder` is vulnerable to XML attacks"
+  },
+  "S408": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-xml-minidom-import",
+    "status": "Preview",
+    "summary": "`xml.dom.minidom` is vulnerable to XML attacks"
+  },
+  "S409": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-xml-pulldom-import",
+    "status": "Preview",
+    "summary": "`xml.dom.pulldom` is vulnerable to XML attacks"
+  },
+  "S410": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.3.0",
+    "slug": "suspicious-lxml-import",
+    "status": "Removed",
+    "summary": "`lxml` is vulnerable to XML attacks"
+  },
+  "S411": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-xmlrpc-import",
+    "status": "Preview",
+    "summary": "XMLRPC is vulnerable to remote XML attacks"
+  },
+  "S412": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-httpoxy-import",
+    "status": "Preview",
+    "summary": "`httpoxy` is a set of vulnerabilities that affect application code running inCGI, or CGI-like environments. The use of CGI for web applications should be avoided"
+  },
+  "S413": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-pycrypto-import",
+    "status": "Preview",
+    "summary": "`pycrypto` library is known to have publicly disclosed buffer overflow vulnerability"
+  },
+  "S415": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.1.12",
+    "slug": "suspicious-pyghmi-import",
+    "status": "Preview",
+    "summary": "An IPMI-related module is being imported. Prefer an encrypted protocol over IPMI."
+  },
+  "S501": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.213",
+    "slug": "request-with-no-cert-validation",
+    "status": "Stable",
+    "summary": "Probable use of `{string}` call with `verify=False` disabling SSL certificate checks"
+  },
+  "S502": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "ssl-insecure-version",
+    "status": "Stable",
+    "summary": "Call made with insecure SSL protocol: `{protocol}`"
+  },
+  "S503": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "ssl-with-bad-defaults",
+    "status": "Stable",
+    "summary": "Argument default set to insecure SSL protocol: `{protocol}`"
+  },
+  "S504": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "ssl-with-no-version",
+    "status": "Stable",
+    "summary": "`ssl.wrap_socket` called without an `ssl_version``"
+  },
+  "S505": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "weak-cryptographic-key",
+    "status": "Stable",
+    "summary": "{cryptographic_key} key sizes below {minimum_key_size} bits are considered breakable"
+  },
+  "S506": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.212",
+    "slug": "unsafe-yaml-load",
+    "status": "Stable",
+    "summary": "Probable use of unsafe loader `{name}` with `yaml.load`. Allows instantiation of arbitrary objects. Consider `yaml.safe_load`."
+  },
+  "S507": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "ssh-no-host-key-verification",
+    "status": "Stable",
+    "summary": "Paramiko call with policy set to automatically trust the unknown host key"
+  },
+  "S508": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.218",
+    "slug": "snmp-insecure-version",
+    "status": "Stable",
+    "summary": "The use of SNMPv1 and SNMPv2 is insecure. Use SNMPv3 if able."
+  },
+  "S509": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.218",
+    "slug": "snmp-weak-cryptography",
+    "status": "Stable",
+    "summary": "You should not use SNMPv3 without encryption. `noAuthNoPriv` & `authNoPriv` is insecure."
+  },
+  "S601": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.270",
+    "slug": "paramiko-call",
+    "status": "Stable",
+    "summary": "Possible shell injection via Paramiko call; check inputs are properly sanitized"
+  },
+  "S602": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.262",
+    "slug": "subprocess-popen-with-shell-equals-true",
+    "status": "Stable",
+    "summary": "`subprocess` call with `shell=True` seems safe, but may be changed in the future; consider rewriting without `shell`"
+  },
+  "S603": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.262",
+    "slug": "subprocess-without-shell-equals-true",
+    "status": "Stable",
+    "summary": "`subprocess` call: check for execution of untrusted input"
+  },
+  "S604": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.262",
+    "slug": "call-with-shell-equals-true",
+    "status": "Stable",
+    "summary": "Function call with `shell=True` parameter identified, security issue"
+  },
+  "S605": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.262",
+    "slug": "start-process-with-a-shell",
+    "status": "Stable",
+    "summary": "Starting a process with a shell: seems safe, but may be changed in the future; consider rewriting without `shell`"
+  },
+  "S606": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.262",
+    "slug": "start-process-with-no-shell",
+    "status": "Stable",
+    "summary": "Starting a process without a shell"
+  },
+  "S607": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.262",
+    "slug": "start-process-with-partial-path",
+    "status": "Stable",
+    "summary": "Starting a process with a partial executable path"
+  },
+  "S608": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.245",
+    "slug": "hardcoded-sql-expression",
+    "status": "Stable",
+    "summary": "Possible SQL injection vector through string-based query construction"
+  },
+  "S609": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.271",
+    "slug": "unix-command-wildcard-injection",
+    "status": "Stable",
+    "summary": "Possible wildcard injection in call due to `*` usage"
+  },
+  "S610": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "0.5.0",
+    "slug": "django-extra",
+    "status": "Stable",
+    "summary": "Use of Django `extra` can lead to SQL injection vulnerabilities"
+  },
+  "S611": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "django-raw-sql",
+    "status": "Stable",
+    "summary": "Use of `RawSQL` can lead to SQL injection vulnerabilities"
+  },
+  "S612": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.231",
+    "slug": "logging-config-insecure-listen",
+    "status": "Stable",
+    "summary": "Use of insecure `logging.config.listen` detected"
+  },
+  "S701": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.0.220",
+    "slug": "jinja2-autoescape-false",
+    "status": "Stable",
+    "summary": "Using jinja2 templates with `autoescape=False` is dangerous and can lead to XSS. Ensure `autoescape=True` or use the `select_autoescape` function."
+  },
+  "S702": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "v0.2.0",
+    "slug": "mako-templates",
+    "status": "Stable",
+    "summary": "Mako templates allow HTML and JavaScript rendering by default and are inherently open to XSS attacks"
+  },
+  "S704": {
+    "fix": "None",
+    "linter": "flake8-bandit",
+    "since": "0.10.0",
+    "slug": "unsafe-markup-use",
+    "status": "Stable",
+    "summary": "Unsafe use of `{name}` detected"
+  },
+  "SIM101": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.212",
+    "slug": "duplicate-isinstance-call",
+    "status": "Stable",
+    "summary": "Multiple `isinstance` calls for `{name}`, merge into a single call"
+  },
+  "SIM102": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "collapsible-if",
+    "status": "Stable",
+    "summary": "Use a single `if` statement instead of nested `if` statements"
+  },
+  "SIM103": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.214",
+    "slug": "needless-bool",
+    "status": "Stable",
+    "summary": "Return the condition `{condition}` directly"
+  },
+  "SIM105": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "suppressible-exception",
+    "status": "Stable",
+    "summary": "Use `contextlib.suppress({exception})` instead of `try`-`except`-`pass`"
+  },
+  "SIM107": {
+    "fix": "None",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "return-in-try-except-finally",
+    "status": "Stable",
+    "summary": "Don't use `return` in `try`-`except` and `finally`"
+  },
+  "SIM108": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.213",
+    "slug": "if-else-block-instead-of-if-exp",
+    "status": "Stable",
+    "summary": "Use ternary operator `{contents}` instead of `if`-`else`-block"
+  },
+  "SIM109": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.213",
+    "slug": "compare-with-tuple",
+    "status": "Stable",
+    "summary": "Use `{replacement}` instead of multiple equality comparisons"
+  },
+  "SIM110": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "reimplemented-builtin",
+    "status": "Stable",
+    "summary": "Use `{replacement}` instead of `for` loop"
+  },
+  "SIM112": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.218",
+    "slug": "uncapitalized-environment-variables",
+    "status": "Stable",
+    "summary": "Use capitalized environment variable `{expected}` instead of `{actual}`"
+  },
+  "SIM113": {
+    "fix": "None",
+    "linter": "flake8-simplify",
+    "since": "v0.2.0",
+    "slug": "enumerate-for-loop",
+    "status": "Stable",
+    "summary": "Use `enumerate()` for index variable `{index}` in `for` loop"
+  },
+  "SIM114": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.246",
+    "slug": "if-with-same-arms",
+    "status": "Stable",
+    "summary": "Combine `if` branches using logical `or` operator"
+  },
+  "SIM115": {
+    "fix": "None",
+    "linter": "flake8-simplify",
+    "since": "v0.0.219",
+    "slug": "open-file-with-context-handler",
+    "status": "Stable",
+    "summary": "Use a context manager for opening files"
+  },
+  "SIM116": {
+    "fix": "None",
+    "linter": "flake8-simplify",
+    "since": "v0.0.250",
+    "slug": "if-else-block-instead-of-dict-lookup",
+    "status": "Stable",
+    "summary": "Use a dictionary instead of consecutive `if` statements"
+  },
+  "SIM117": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "multiple-with-statements",
+    "status": "Stable",
+    "summary": "Use a single `with` statement with multiple contexts instead of nested `with` statements"
+  },
+  "SIM118": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.176",
+    "slug": "in-dict-keys",
+    "status": "Stable",
+    "summary": "Use `key {operator} dict` instead of `key {operator} dict.keys()`"
+  },
+  "SIM201": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.213",
+    "slug": "negate-equal-op",
+    "status": "Stable",
+    "summary": "Use `{left} != {right}` instead of `not {left} == {right}`"
+  },
+  "SIM202": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.213",
+    "slug": "negate-not-equal-op",
+    "status": "Stable",
+    "summary": "Use `{left} == {right}` instead of `not {left} != {right}`"
+  },
+  "SIM208": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.213",
+    "slug": "double-negation",
+    "status": "Stable",
+    "summary": "Use `{expr}` instead of `not (not {expr})`"
+  },
+  "SIM210": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.214",
+    "slug": "if-expr-with-true-false",
+    "status": "Stable",
+    "summary": "Remove unnecessary `True if ... else False`"
+  },
+  "SIM211": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.214",
+    "slug": "if-expr-with-false-true",
+    "status": "Stable",
+    "summary": "Use `not ...` instead of `False if ... else True`"
+  },
+  "SIM212": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.214",
+    "slug": "if-expr-with-twisted-arms",
+    "status": "Stable",
+    "summary": "Use `{expr_else} if {expr_else} else {expr_body}` instead of `{expr_body} if not {expr_else} else {expr_else}`"
+  },
+  "SIM220": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "expr-and-not-expr",
+    "status": "Stable",
+    "summary": "Use `False` instead of `{name} and not {name}`"
+  },
+  "SIM221": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.211",
+    "slug": "expr-or-not-expr",
+    "status": "Stable",
+    "summary": "Use `True` instead of `{name} or not {name}`"
+  },
+  "SIM222": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.208",
+    "slug": "expr-or-true",
+    "status": "Stable",
+    "summary": "Use `{expr}` instead of `{replaced}`"
+  },
+  "SIM223": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.208",
+    "slug": "expr-and-false",
+    "status": "Stable",
+    "summary": "Use `{expr}` instead of `{replaced}`"
+  },
+  "SIM300": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.207",
+    "slug": "yoda-conditions",
+    "status": "Stable",
+    "summary": "Yoda condition detected"
+  },
+  "SIM401": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "v0.0.219",
+    "slug": "if-else-block-instead-of-dict-get",
+    "status": "Stable",
+    "summary": "Use `{contents}` instead of an `if` block"
+  },
+  "SIM905": {
+    "fix": "Sometimes",
+    "linter": "flake8-simplify",
+    "since": "0.10.0",
+    "slug": "split-static-string",
+    "status": "Stable",
+    "summary": "Consider using a list literal instead of `str.{}`"
+  },
+  "SIM910": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.0.261",
+    "slug": "dict-get-with-none-default",
+    "status": "Stable",
+    "summary": "Use `{expected}` instead of `{actual}`"
+  },
+  "SIM911": {
+    "fix": "Always",
+    "linter": "flake8-simplify",
+    "since": "v0.2.0",
+    "slug": "zip-dict-keys-and-values",
+    "status": "Stable",
+    "summary": "Use `{expected}` instead of `{actual}`"
+  },
+  "SLF001": {
+    "fix": "None",
+    "linter": "flake8-self",
+    "since": "v0.0.240",
+    "slug": "private-member-access",
+    "status": "Stable",
+    "summary": "Private member accessed: `{access}`"
+  },
+  "SLOT000": {
+    "fix": "None",
+    "linter": "flake8-slots",
+    "since": "v0.0.273",
+    "slug": "no-slots-in-str-subclass",
+    "status": "Stable",
+    "summary": "Subclasses of `str` should define `__slots__`"
+  },
+  "SLOT001": {
+    "fix": "None",
+    "linter": "flake8-slots",
+    "since": "v0.0.273",
+    "slug": "no-slots-in-tuple-subclass",
+    "status": "Stable",
+    "summary": "Subclasses of `tuple` should define `__slots__`"
+  },
+  "SLOT002": {
+    "fix": "None",
+    "linter": "flake8-slots",
+    "since": "v0.0.273",
+    "slug": "no-slots-in-namedtuple-subclass",
+    "status": "Stable",
+    "summary": "Subclasses of {namedtuple_kind} should define `__slots__`"
+  }
+}

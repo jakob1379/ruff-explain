@@ -9,3 +9,5 @@ wheels/
 # Virtual environments
 .venv
 /src/.skylos_trace
+/.agents/
+/.desloppify/

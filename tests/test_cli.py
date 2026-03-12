@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from typer.testing import CliRunner
 
 from ruff_explain import cli

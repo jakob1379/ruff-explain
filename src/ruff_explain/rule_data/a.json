@@ -1,0 +1,362 @@
+{
+  "A001": {
+    "fix": "None",
+    "linter": "flake8-builtins",
+    "since": "v0.0.48",
+    "slug": "builtin-variable-shadowing",
+    "status": "Stable",
+    "summary": "Variable `{name}` is shadowing a Python builtin"
+  },
+  "A002": {
+    "fix": "None",
+    "linter": "flake8-builtins",
+    "since": "v0.0.48",
+    "slug": "builtin-argument-shadowing",
+    "status": "Stable",
+    "summary": "Function argument `{name}` is shadowing a Python builtin"
+  },
+  "A003": {
+    "fix": "None",
+    "linter": "flake8-builtins",
+    "since": "v0.0.48",
+    "slug": "builtin-attribute-shadowing",
+    "status": "Stable",
+    "summary": "Python builtin is shadowed by class attribute `{name}` from {row}"
+  },
+  "A004": {
+    "fix": "None",
+    "linter": "flake8-builtins",
+    "since": "0.8.0",
+    "slug": "builtin-import-shadowing",
+    "status": "Stable",
+    "summary": "Import `{name}` is shadowing a Python builtin"
+  },
+  "A005": {
+    "fix": "None",
+    "linter": "flake8-builtins",
+    "since": "0.9.0",
+    "slug": "stdlib-module-shadowing",
+    "status": "Stable",
+    "summary": "Module `{name}` shadows a Python standard-library module"
+  },
+  "A006": {
+    "fix": "None",
+    "linter": "flake8-builtins",
+    "since": "0.9.0",
+    "slug": "builtin-lambda-argument-shadowing",
+    "status": "Stable",
+    "summary": "Lambda argument `{name}` is shadowing a Python builtin"
+  },
+  "AIR001": {
+    "fix": "None",
+    "linter": "Airflow",
+    "since": "v0.0.271",
+    "slug": "airflow-variable-name-task-id-mismatch",
+    "status": "Stable",
+    "summary": "Task variable name should match the `task_id`: \"{task_id}\""
+  },
+  "AIR002": {
+    "fix": "None",
+    "linter": "Airflow",
+    "since": "0.13.0",
+    "slug": "airflow-dag-no-schedule-argument",
+    "status": "Stable",
+    "summary": "`DAG` or `@dag` should have an explicit `schedule` argument"
+  },
+  "AIR301": {
+    "fix": "Sometimes",
+    "linter": "Airflow",
+    "since": "0.13.0",
+    "slug": "airflow3-removal",
+    "status": "Stable",
+    "summary": "`{deprecated}` is removed in Airflow 3.0"
+  },
+  "AIR302": {
+    "fix": "Sometimes",
+    "linter": "Airflow",
+    "since": "0.13.0",
+    "slug": "airflow3-moved-to-provider",
+    "status": "Stable",
+    "summary": "`{deprecated}` is moved into `{provider}` provider in Airflow 3.0;"
+  },
+  "AIR303": {
+    "fix": "None",
+    "linter": "Airflow",
+    "since": "0.14.11",
+    "slug": "airflow3-incompatible-function-signature",
+    "status": "Preview",
+    "summary": "`{function_name}` signature is changed in Airflow 3.0"
+  },
+  "AIR311": {
+    "fix": "Sometimes",
+    "linter": "Airflow",
+    "since": "0.13.0",
+    "slug": "airflow3-suggested-update",
+    "status": "Stable",
+    "summary": "`{deprecated}` is removed in Airflow 3.0; It still works in Airflow 3.0 but is expected to be removed in a future version."
+  },
+  "AIR312": {
+    "fix": "Sometimes",
+    "linter": "Airflow",
+    "since": "0.13.0",
+    "slug": "airflow3-suggested-to-move-to-provider",
+    "status": "Stable",
+    "summary": "`{deprecated}` is deprecated and moved into `{provider}` provider in Airflow 3.0; It still works in Airflow 3.0 but is expected to be removed in a future version."
+  },
+  "AIR321": {
+    "fix": "Sometimes",
+    "linter": "Airflow",
+    "since": "0.15.1",
+    "slug": "airflow31-moved",
+    "status": "Preview",
+    "summary": "`{deprecated}` is moved in Airflow 3.1"
+  },
+  "ANN001": {
+    "fix": "None",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-type-function-argument",
+    "status": "Stable",
+    "summary": "Missing type annotation for function argument `{name}`"
+  },
+  "ANN002": {
+    "fix": "None",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-type-args",
+    "status": "Stable",
+    "summary": "Missing type annotation for `*{name}`"
+  },
+  "ANN003": {
+    "fix": "None",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-type-kwargs",
+    "status": "Stable",
+    "summary": "Missing type annotation for `**{name}`"
+  },
+  "ANN101": {
+    "fix": "None",
+    "linter": "flake8-annotations",
+    "since": "0.8.0",
+    "slug": "missing-type-self",
+    "status": "Removed",
+    "summary": "Missing type annotation for `{name}` in method"
+  },
+  "ANN102": {
+    "fix": "None",
+    "linter": "flake8-annotations",
+    "since": "0.8.0",
+    "slug": "missing-type-cls",
+    "status": "Removed",
+    "summary": "Missing type annotation for `{name}` in classmethod"
+  },
+  "ANN201": {
+    "fix": "Sometimes",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-return-type-undocumented-public-function",
+    "status": "Stable",
+    "summary": "Missing return type annotation for public function `{name}`"
+  },
+  "ANN202": {
+    "fix": "Sometimes",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-return-type-private-function",
+    "status": "Stable",
+    "summary": "Missing return type annotation for private function `{name}`"
+  },
+  "ANN204": {
+    "fix": "Sometimes",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-return-type-special-method",
+    "status": "Stable",
+    "summary": "Missing return type annotation for special method `{name}`"
+  },
+  "ANN205": {
+    "fix": "Sometimes",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-return-type-static-method",
+    "status": "Stable",
+    "summary": "Missing return type annotation for staticmethod `{name}`"
+  },
+  "ANN206": {
+    "fix": "Sometimes",
+    "linter": "flake8-annotations",
+    "since": "v0.0.105",
+    "slug": "missing-return-type-class-method",
+    "status": "Stable",
+    "summary": "Missing return type annotation for classmethod `{name}`"
+  },
+  "ANN401": {
+    "fix": "None",
+    "linter": "flake8-annotations",
+    "since": "v0.0.108",
+    "slug": "any-type",
+    "status": "Stable",
+    "summary": "Dynamically typed expressions (typing.Any) are disallowed in `{name}`"
+  },
+  "ARG001": {
+    "fix": "None",
+    "linter": "flake8-unused-arguments",
+    "since": "v0.0.168",
+    "slug": "unused-function-argument",
+    "status": "Stable",
+    "summary": "Unused function argument: `{name}`"
+  },
+  "ARG002": {
+    "fix": "None",
+    "linter": "flake8-unused-arguments",
+    "since": "v0.0.168",
+    "slug": "unused-method-argument",
+    "status": "Stable",
+    "summary": "Unused method argument: `{name}`"
+  },
+  "ARG003": {
+    "fix": "None",
+    "linter": "flake8-unused-arguments",
+    "since": "v0.0.168",
+    "slug": "unused-class-method-argument",
+    "status": "Stable",
+    "summary": "Unused class method argument: `{name}`"
+  },
+  "ARG004": {
+    "fix": "None",
+    "linter": "flake8-unused-arguments",
+    "since": "v0.0.168",
+    "slug": "unused-static-method-argument",
+    "status": "Stable",
+    "summary": "Unused static method argument: `{name}`"
+  },
+  "ARG005": {
+    "fix": "None",
+    "linter": "flake8-unused-arguments",
+    "since": "v0.0.168",
+    "slug": "unused-lambda-argument",
+    "status": "Stable",
+    "summary": "Unused lambda argument: `{name}`"
+  },
+  "ASYNC100": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "v0.0.269",
+    "slug": "cancel-scope-no-checkpoint",
+    "status": "Stable",
+    "summary": "A `with {method_name}(...):` context does not contain any `await` statements. This makes it pointless, as the timeout can only be triggered by a checkpoint."
+  },
+  "ASYNC105": {
+    "fix": "Sometimes",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "trio-sync-call",
+    "status": "Stable",
+    "summary": "Call to `{method_name}` is not immediately awaited"
+  },
+  "ASYNC109": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "async-function-with-timeout",
+    "status": "Stable",
+    "summary": "Async function definition with a `timeout` parameter"
+  },
+  "ASYNC110": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "async-busy-wait",
+    "status": "Stable",
+    "summary": "Use `{module}.Event` instead of awaiting `{module}.sleep` in a `while` loop"
+  },
+  "ASYNC115": {
+    "fix": "Always",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "async-zero-sleep",
+    "status": "Stable",
+    "summary": "Use `{module}.lowlevel.checkpoint()` instead of `{module}.sleep(0)`"
+  },
+  "ASYNC116": {
+    "fix": "Sometimes",
+    "linter": "flake8-async",
+    "since": "0.13.0",
+    "slug": "long-sleep-not-forever",
+    "status": "Stable",
+    "summary": "`{module}.sleep()` with >24 hour interval should usually be `{module}.sleep_forever()`"
+  },
+  "ASYNC210": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "blocking-http-call-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not call blocking HTTP methods"
+  },
+  "ASYNC212": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.15.0",
+    "slug": "blocking-http-call-httpx-in-async-function",
+    "status": "Stable",
+    "summary": "Blocking httpx method {name}.{call}() in async context, use httpx.AsyncClient"
+  },
+  "ASYNC220": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "create-subprocess-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not create subprocesses with blocking methods"
+  },
+  "ASYNC221": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "run-process-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not run processes with blocking methods"
+  },
+  "ASYNC222": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "wait-for-process-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not wait on processes with blocking methods"
+  },
+  "ASYNC230": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "blocking-open-call-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not open files with blocking methods like `open`"
+  },
+  "ASYNC240": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.15.0",
+    "slug": "blocking-path-method-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not use {path_library} methods, use trio.Path or anyio.path"
+  },
+  "ASYNC250": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.15.0",
+    "slug": "blocking-input-in-async-function",
+    "status": "Stable",
+    "summary": "Blocking call to `input()` in async context"
+  },
+  "ASYNC251": {
+    "fix": "None",
+    "linter": "flake8-async",
+    "since": "0.5.0",
+    "slug": "blocking-sleep-in-async-function",
+    "status": "Stable",
+    "summary": "Async functions should not call `time.sleep`"
+  }
+}

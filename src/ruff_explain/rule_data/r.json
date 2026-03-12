@@ -1,0 +1,626 @@
+{
+  "RET501": {
+    "fix": "Always",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "unnecessary-return-none",
+    "status": "Stable",
+    "summary": "Do not explicitly `return None` in function if it is the only possible return value"
+  },
+  "RET502": {
+    "fix": "Always",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "implicit-return-value",
+    "status": "Stable",
+    "summary": "Do not implicitly `return None` in function able to return non-`None` value"
+  },
+  "RET503": {
+    "fix": "Always",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "implicit-return",
+    "status": "Stable",
+    "summary": "Missing explicit `return` at the end of function able to return non-`None` value"
+  },
+  "RET504": {
+    "fix": "Always",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "unnecessary-assign",
+    "status": "Stable",
+    "summary": "Unnecessary assignment to `{name}` before `return` statement"
+  },
+  "RET505": {
+    "fix": "Sometimes",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "superfluous-else-return",
+    "status": "Stable",
+    "summary": "Unnecessary `{branch}` after `return` statement"
+  },
+  "RET506": {
+    "fix": "Sometimes",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "superfluous-else-raise",
+    "status": "Stable",
+    "summary": "Unnecessary `{branch}` after `raise` statement"
+  },
+  "RET507": {
+    "fix": "Sometimes",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "superfluous-else-continue",
+    "status": "Stable",
+    "summary": "Unnecessary `{branch}` after `continue` statement"
+  },
+  "RET508": {
+    "fix": "Sometimes",
+    "linter": "flake8-return",
+    "since": "v0.0.154",
+    "slug": "superfluous-else-break",
+    "status": "Stable",
+    "summary": "Unnecessary `{branch}` after `break` statement"
+  },
+  "RSE102": {
+    "fix": "Always",
+    "linter": "flake8-raise",
+    "since": "v0.0.239",
+    "slug": "unnecessary-paren-on-raise-exception",
+    "status": "Stable",
+    "summary": "Unnecessary parentheses on raised exception"
+  },
+  "RUF001": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.102",
+    "slug": "ambiguous-unicode-character-string",
+    "status": "Stable",
+    "summary": "String contains ambiguous {}. Did you mean {}?"
+  },
+  "RUF002": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.102",
+    "slug": "ambiguous-unicode-character-docstring",
+    "status": "Stable",
+    "summary": "Docstring contains ambiguous {}. Did you mean {}?"
+  },
+  "RUF003": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.108",
+    "slug": "ambiguous-unicode-character-comment",
+    "status": "Stable",
+    "summary": "Comment contains ambiguous {}. Did you mean {}?"
+  },
+  "RUF005": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.227",
+    "slug": "collection-literal-concatenation",
+    "status": "Stable",
+    "summary": "Consider `{expression}` instead of concatenation"
+  },
+  "RUF006": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.247",
+    "slug": "asyncio-dangling-task",
+    "status": "Stable",
+    "summary": "Store a reference to the return value of `{expr}.{method}`"
+  },
+  "RUF007": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.257",
+    "slug": "zip-instead-of-pairwise",
+    "status": "Stable",
+    "summary": "Prefer `itertools.pairwise()` over `zip()` when iterating over successive pairs"
+  },
+  "RUF008": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.262",
+    "slug": "mutable-dataclass-default",
+    "status": "Stable",
+    "summary": "Do not use mutable default values for dataclass attributes"
+  },
+  "RUF009": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.262",
+    "slug": "function-call-in-dataclass-default-argument",
+    "status": "Stable",
+    "summary": "Do not perform function call `{name}` in dataclass defaults"
+  },
+  "RUF010": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.267",
+    "slug": "explicit-f-string-type-conversion",
+    "status": "Stable",
+    "summary": "Use explicit conversion flag"
+  },
+  "RUF011": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.2.0",
+    "slug": "ruff-static-key-dict-comprehension",
+    "status": "Removed",
+    "summary": "Dictionary comprehension uses static key"
+  },
+  "RUF012": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.273",
+    "slug": "mutable-class-default",
+    "status": "Stable",
+    "summary": "Mutable default value for class attribute"
+  },
+  "RUF013": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.273",
+    "slug": "implicit-optional",
+    "status": "Stable",
+    "summary": "PEP 484 prohibits implicit `Optional`"
+  },
+  "RUF015": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.278",
+    "slug": "unnecessary-iterable-allocation-for-first-element",
+    "status": "Stable",
+    "summary": "Prefer `next({iterable})` over single element slice"
+  },
+  "RUF016": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.278",
+    "slug": "invalid-index-type",
+    "status": "Stable",
+    "summary": "Slice in indexed access to type `{value_type}` uses type `{index_type}` instead of an integer"
+  },
+  "RUF017": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.285",
+    "slug": "quadratic-list-summation",
+    "status": "Stable",
+    "summary": "Avoid quadratic list summation"
+  },
+  "RUF018": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.2.0",
+    "slug": "assignment-in-assert",
+    "status": "Stable",
+    "summary": "Avoid assignment expressions in `assert` statements"
+  },
+  "RUF019": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "v0.2.0",
+    "slug": "unnecessary-key-check",
+    "status": "Stable",
+    "summary": "Unnecessary key check before dictionary access"
+  },
+  "RUF020": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "v0.2.0",
+    "slug": "never-union",
+    "status": "Stable",
+    "summary": "`{never_like} | T` is equivalent to `T`"
+  },
+  "RUF021": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.0",
+    "slug": "parenthesize-chained-operators",
+    "status": "Stable",
+    "summary": "Parenthesize `a and b` expressions when chaining `and` and `or` together, to make the precedence clear"
+  },
+  "RUF022": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.0",
+    "slug": "unsorted-dunder-all",
+    "status": "Stable",
+    "summary": "`__all__` is not sorted"
+  },
+  "RUF023": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.0",
+    "slug": "unsorted-dunder-slots",
+    "status": "Stable",
+    "summary": "`{}.__slots__` is not sorted"
+  },
+  "RUF024": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.5.0",
+    "slug": "mutable-fromkeys-value",
+    "status": "Stable",
+    "summary": "Do not pass mutable objects as values to `dict.fromkeys`"
+  },
+  "RUF026": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.5.0",
+    "slug": "default-factory-kwarg",
+    "status": "Stable",
+    "summary": "`default_factory` is a positional-only argument to `defaultdict`"
+  },
+  "RUF027": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "v0.2.1",
+    "slug": "missing-f-string-syntax",
+    "status": "Preview",
+    "summary": "Possible f-string without an `f` prefix"
+  },
+  "RUF028": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.12.0",
+    "slug": "invalid-formatter-suppression-comment",
+    "status": "Stable",
+    "summary": "This suppression comment is invalid because {}"
+  },
+  "RUF029": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.4.0",
+    "slug": "unused-async",
+    "status": "Preview",
+    "summary": "Function `{name}` is declared `async`, but doesn't `await` or use `async` features."
+  },
+  "RUF030": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.0",
+    "slug": "assert-with-print-message",
+    "status": "Stable",
+    "summary": "`print()` call in `assert` statement is likely unintentional"
+  },
+  "RUF031": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.5.7",
+    "slug": "incorrectly-parenthesized-tuple-in-subscript",
+    "status": "Preview",
+    "summary": "Use parentheses for tuples in subscripts"
+  },
+  "RUF032": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.9.0",
+    "slug": "decimal-from-float-literal",
+    "status": "Stable",
+    "summary": "`Decimal()` called with float literal argument"
+  },
+  "RUF033": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.9.0",
+    "slug": "post-init-default",
+    "status": "Stable",
+    "summary": "`__post_init__` method with argument defaults"
+  },
+  "RUF034": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.9.0",
+    "slug": "useless-if-else",
+    "status": "Stable",
+    "summary": "Useless `if`-`else` condition"
+  },
+  "RUF035": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.10.0",
+    "slug": "ruff-unsafe-markup-use",
+    "status": "Removed",
+    "summary": "Unsafe use of `{name}` detected"
+  },
+  "RUF036": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.7.4",
+    "slug": "none-not-at-end-of-union",
+    "status": "Preview",
+    "summary": "`None` not at the end of the type union."
+  },
+  "RUF037": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "unnecessary-empty-iterable-within-deque-call",
+    "status": "Stable",
+    "summary": "Unnecessary empty iterable within a deque call"
+  },
+  "RUF038": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.0",
+    "slug": "redundant-bool-literal",
+    "status": "Preview",
+    "summary": "`Literal[True, False, ...]` can be replaced with `Literal[...] | bool`"
+  },
+  "RUF039": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.0",
+    "slug": "unraw-re-pattern",
+    "status": "Preview",
+    "summary": "First argument to {call} is not raw string"
+  },
+  "RUF040": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.10.0",
+    "slug": "invalid-assert-message-literal-argument",
+    "status": "Stable",
+    "summary": "Non-string literal used as assert message"
+  },
+  "RUF041": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.10.0",
+    "slug": "unnecessary-nested-literal",
+    "status": "Stable",
+    "summary": "Unnecessary nested `Literal`"
+  },
+  "RUF043": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.13.0",
+    "slug": "pytest-raises-ambiguous-pattern",
+    "status": "Stable",
+    "summary": "Pattern passed to `match=` contains metacharacters but is neither escaped nor raw"
+  },
+  "RUF045": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.9.7",
+    "slug": "implicit-class-var-in-dataclass",
+    "status": "Preview",
+    "summary": "Assignment without annotation found in dataclass body"
+  },
+  "RUF046": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.10.0",
+    "slug": "unnecessary-cast-to-int",
+    "status": "Stable",
+    "summary": "Value being cast to `int` is already an integer"
+  },
+  "RUF047": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.9.3",
+    "slug": "needless-else",
+    "status": "Preview",
+    "summary": "Empty `else` clause"
+  },
+  "RUF048": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.10.0",
+    "slug": "map-int-version-parsing",
+    "status": "Stable",
+    "summary": "`__version__` may contain non-integral-like elements"
+  },
+  "RUF049": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.12.0",
+    "slug": "dataclass-enum",
+    "status": "Stable",
+    "summary": "An enum class should not be decorated with `@dataclass`"
+  },
+  "RUF051": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.10.0",
+    "slug": "if-key-in-dict-del",
+    "status": "Stable",
+    "summary": "Use `pop` instead of `key in dict` followed by `del dict[key]`"
+  },
+  "RUF052": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.2",
+    "slug": "used-dummy-variable",
+    "status": "Preview",
+    "summary": "Local dummy variable `{}` is accessed"
+  },
+  "RUF053": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.12.0",
+    "slug": "class-with-mixed-type-vars",
+    "status": "Stable",
+    "summary": "Class with type parameter list inherits from `Generic`"
+  },
+  "RUF054": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.9.6",
+    "slug": "indented-form-feed",
+    "status": "Preview",
+    "summary": "Indented form feed"
+  },
+  "RUF055": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.1",
+    "slug": "unnecessary-regular-expression",
+    "status": "Preview",
+    "summary": "Plain string pattern passed to `re` function"
+  },
+  "RUF056": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.8.5",
+    "slug": "falsy-dict-get-fallback",
+    "status": "Preview",
+    "summary": "Avoid providing a falsy fallback to `dict.get()` in boolean test positions. The default fallback `None` is already falsy."
+  },
+  "RUF057": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.12.0",
+    "slug": "unnecessary-round",
+    "status": "Stable",
+    "summary": "Value being rounded is already an integer"
+  },
+  "RUF058": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.12.0",
+    "slug": "starmap-zip",
+    "status": "Stable",
+    "summary": "`itertools.starmap` called on `zip` iterable"
+  },
+  "RUF059": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.13.0",
+    "slug": "unused-unpacked-variable",
+    "status": "Stable",
+    "summary": "Unpacked variable `{name}` is never used"
+  },
+  "RUF060": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "in-empty-collection",
+    "status": "Stable",
+    "summary": "Unnecessary membership test on empty collection"
+  },
+  "RUF061": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "legacy-form-pytest-raises",
+    "status": "Stable",
+    "summary": "Use context-manager form of `pytest.{}()`"
+  },
+  "RUF063": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.12.1",
+    "slug": "access-annotations-from-class-dict",
+    "status": "Preview",
+    "summary": "Use `{suggestion}` instead of `__dict__` access"
+  },
+  "RUF064": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "non-octal-permissions",
+    "status": "Stable",
+    "summary": "Non-octal mode"
+  },
+  "RUF065": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.13.2",
+    "slug": "logging-eager-conversion",
+    "status": "Preview",
+    "summary": "Unnecessary `oct()` conversion when formatting with `%s`. Use `%#o` instead of `%s`"
+  },
+  "RUF066": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.14.7",
+    "slug": "property-without-return",
+    "status": "Preview",
+    "summary": "`{name}` is a property without a `return` statement"
+  },
+  "RUF067": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.14.11",
+    "slug": "non-empty-init-module",
+    "status": "Preview",
+    "summary": "`__init__` module should not contain any code"
+  },
+  "RUF068": {
+    "fix": "Sometimes",
+    "linter": "Ruff-specific rules",
+    "since": "0.14.14",
+    "slug": "duplicate-entry-in-dunder-all",
+    "status": "Preview",
+    "summary": "`__all__` contains duplicate entries"
+  },
+  "RUF069": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.1",
+    "slug": "float-equality-comparison",
+    "status": "Preview",
+    "summary": "Unreliable floating point equality comparison `{left} {operator} {right}`"
+  },
+  "RUF070": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.3",
+    "slug": "unnecessary-assign-before-yield",
+    "status": "Preview",
+    "summary": "Unnecessary assignment to `{name}` before `yield from` statement"
+  },
+  "RUF100": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.155",
+    "slug": "unused-noqa",
+    "status": "Stable",
+    "summary": "Unused {}"
+  },
+  "RUF101": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.6.0",
+    "slug": "redirected-noqa",
+    "status": "Stable",
+    "summary": "`{original}` is a redirect to `{target}`"
+  },
+  "RUF102": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "invalid-rule-code",
+    "status": "Stable",
+    "summary": "Invalid rule code in {}: {}"
+  },
+  "RUF103": {
+    "fix": "Always",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "invalid-suppression-comment",
+    "status": "Stable",
+    "summary": "Invalid suppression comment: {msg}"
+  },
+  "RUF104": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "0.15.0",
+    "slug": "unmatched-suppression-comment",
+    "status": "Stable",
+    "summary": "Suppression comment without matching `#ruff:enable` comment"
+  },
+  "RUF200": {
+    "fix": "None",
+    "linter": "Ruff-specific rules",
+    "since": "v0.0.271",
+    "slug": "invalid-pyproject-toml",
+    "status": "Stable",
+    "summary": "Failed to parse pyproject.toml: {message}"
+  }
+}

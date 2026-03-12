@@ -1,0 +1,738 @@
+{
+  "F401": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.18",
+    "slug": "unused-import",
+    "status": "Stable",
+    "summary": "`{name}` imported but unused; consider using `importlib.util.find_spec` to test for availability"
+  },
+  "F402": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.44",
+    "slug": "import-shadowed-by-loop-var",
+    "status": "Stable",
+    "summary": "Import `{name}` from {row} shadowed by loop variable"
+  },
+  "F403": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.18",
+    "slug": "undefined-local-with-import-star",
+    "status": "Stable",
+    "summary": "`from {name} import *` used; unable to detect undefined names"
+  },
+  "F404": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.34",
+    "slug": "late-future-import",
+    "status": "Stable",
+    "summary": "`from __future__` imports must occur at the beginning of the file"
+  },
+  "F405": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.44",
+    "slug": "undefined-local-with-import-star-usage",
+    "status": "Stable",
+    "summary": "`{name}` may be undefined, or defined from star imports"
+  },
+  "F406": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.37",
+    "slug": "undefined-local-with-nested-import-star-usage",
+    "status": "Stable",
+    "summary": "`from {name} import *` only allowed at module level"
+  },
+  "F407": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.34",
+    "slug": "future-feature-not-defined",
+    "status": "Stable",
+    "summary": "Future feature `{name}` is not defined"
+  },
+  "F501": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-invalid-format",
+    "status": "Stable",
+    "summary": "`%`-format string has invalid format string: {message}"
+  },
+  "F502": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-expected-mapping",
+    "status": "Stable",
+    "summary": "`%`-format string expected mapping but got sequence"
+  },
+  "F503": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-expected-sequence",
+    "status": "Stable",
+    "summary": "`%`-format string expected sequence but got mapping"
+  },
+  "F504": {
+    "fix": "Always",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-extra-named-arguments",
+    "status": "Stable",
+    "summary": "`%`-format string has unused named argument(s): {message}"
+  },
+  "F505": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-missing-argument",
+    "status": "Stable",
+    "summary": "`%`-format string is missing argument(s) for placeholder(s): {message}"
+  },
+  "F506": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-mixed-positional-and-named",
+    "status": "Stable",
+    "summary": "`%`-format string has mixed positional and named placeholders"
+  },
+  "F507": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-positional-count-mismatch",
+    "status": "Stable",
+    "summary": "`%`-format string has {wanted} placeholder(s) but {got} substitution(s)"
+  },
+  "F508": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-star-requires-sequence",
+    "status": "Stable",
+    "summary": "`%`-format string `*` specifier requires sequence"
+  },
+  "F509": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.142",
+    "slug": "percent-format-unsupported-format-character",
+    "status": "Stable",
+    "summary": "`%`-format string has unsupported format character `{char}`"
+  },
+  "F521": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.138",
+    "slug": "string-dot-format-invalid-format",
+    "status": "Stable",
+    "summary": "`.format` call has invalid format string: {message}"
+  },
+  "F522": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.139",
+    "slug": "string-dot-format-extra-named-arguments",
+    "status": "Stable",
+    "summary": "`.format` call has unused named argument(s): {message}"
+  },
+  "F523": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.139",
+    "slug": "string-dot-format-extra-positional-arguments",
+    "status": "Stable",
+    "summary": "`.format` call has unused arguments at position(s): {message}"
+  },
+  "F524": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.139",
+    "slug": "string-dot-format-missing-arguments",
+    "status": "Stable",
+    "summary": "`.format` call is missing argument(s) for placeholder(s): {message}"
+  },
+  "F525": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.139",
+    "slug": "string-dot-format-mixing-automatic",
+    "status": "Stable",
+    "summary": "`.format` string mixes automatic and manual numbering"
+  },
+  "F541": {
+    "fix": "Always",
+    "linter": "Pyflakes",
+    "since": "v0.0.18",
+    "slug": "f-string-missing-placeholders",
+    "status": "Stable",
+    "summary": "f-string without any placeholders"
+  },
+  "F601": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.30",
+    "slug": "multi-value-repeated-key-literal",
+    "status": "Stable",
+    "summary": "Dictionary key literal `{name}` repeated"
+  },
+  "F602": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.30",
+    "slug": "multi-value-repeated-key-variable",
+    "status": "Stable",
+    "summary": "Dictionary key `{name}` repeated"
+  },
+  "F621": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.32",
+    "slug": "expressions-in-star-assignment",
+    "status": "Stable",
+    "summary": "Too many expressions in star-unpacking assignment"
+  },
+  "F622": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.32",
+    "slug": "multiple-starred-expressions",
+    "status": "Stable",
+    "summary": "Two starred expressions in assignment"
+  },
+  "F631": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.28",
+    "slug": "assert-tuple",
+    "status": "Stable",
+    "summary": "Assert test is a non-empty tuple, which is always `True`"
+  },
+  "F632": {
+    "fix": "Always",
+    "linter": "Pyflakes",
+    "since": "v0.0.39",
+    "slug": "is-literal",
+    "status": "Stable",
+    "summary": "Use `==` to compare constant literals"
+  },
+  "F633": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.39",
+    "slug": "invalid-print-syntax",
+    "status": "Stable",
+    "summary": "Use of `>>` is invalid with `print` function"
+  },
+  "F634": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.18",
+    "slug": "if-tuple",
+    "status": "Stable",
+    "summary": "If test is a tuple, which is always `True`"
+  },
+  "F701": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.36",
+    "slug": "break-outside-loop",
+    "status": "Stable",
+    "summary": "`break` outside loop"
+  },
+  "F702": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.36",
+    "slug": "continue-outside-loop",
+    "status": "Stable",
+    "summary": "`continue` not properly in loop"
+  },
+  "F704": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.22",
+    "slug": "yield-outside-function",
+    "status": "Stable",
+    "summary": "`{keyword}` statement outside of a function"
+  },
+  "F706": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.18",
+    "slug": "return-outside-function",
+    "status": "Stable",
+    "summary": "`return` statement outside of a function/method"
+  },
+  "F707": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.28",
+    "slug": "default-except-not-last",
+    "status": "Stable",
+    "summary": "An `except` block as not the last exception handler"
+  },
+  "F722": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.39",
+    "slug": "forward-annotation-syntax-error",
+    "status": "Stable",
+    "summary": "Syntax error in forward annotation: {parse_error}"
+  },
+  "F811": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.171",
+    "slug": "redefined-while-unused",
+    "status": "Stable",
+    "summary": "Redefinition of unused `{name}` from {row}"
+  },
+  "F821": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.20",
+    "slug": "undefined-name",
+    "status": "Stable",
+    "summary": "Undefined name `{name}`. {tip}"
+  },
+  "F822": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.25",
+    "slug": "undefined-export",
+    "status": "Stable",
+    "summary": "Undefined name `{name}` in `__all__`"
+  },
+  "F823": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.24",
+    "slug": "undefined-local",
+    "status": "Stable",
+    "summary": "Local variable `{name}` referenced before assignment"
+  },
+  "F841": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.22",
+    "slug": "unused-variable",
+    "status": "Stable",
+    "summary": "Local variable `{name}` is assigned to but never used"
+  },
+  "F842": {
+    "fix": "None",
+    "linter": "Pyflakes",
+    "since": "v0.0.172",
+    "slug": "unused-annotation",
+    "status": "Stable",
+    "summary": "Local variable `{name}` is annotated but never used"
+  },
+  "F901": {
+    "fix": "Sometimes",
+    "linter": "Pyflakes",
+    "since": "v0.0.18",
+    "slug": "raise-not-implemented",
+    "status": "Stable",
+    "summary": "`raise NotImplemented` should be `raise NotImplementedError`"
+  },
+  "FA100": {
+    "fix": "Always",
+    "linter": "flake8-future-annotations",
+    "since": "v0.0.269",
+    "slug": "future-rewritable-type-annotation",
+    "status": "Stable",
+    "summary": "Add `from __future__ import annotations` to simplify `{name}`"
+  },
+  "FA102": {
+    "fix": "Always",
+    "linter": "flake8-future-annotations",
+    "since": "v0.0.271",
+    "slug": "future-required-type-annotation",
+    "status": "Stable",
+    "summary": "Missing `from __future__ import annotations`, but uses {reason}"
+  },
+  "FAST001": {
+    "fix": "Always",
+    "linter": "FastAPI",
+    "since": "0.8.0",
+    "slug": "fast-api-redundant-response-model",
+    "status": "Stable",
+    "summary": "FastAPI route with redundant `response_model` argument"
+  },
+  "FAST002": {
+    "fix": "Sometimes",
+    "linter": "FastAPI",
+    "since": "0.8.0",
+    "slug": "fast-api-non-annotated-dependency",
+    "status": "Stable",
+    "summary": "FastAPI dependency without `Annotated`"
+  },
+  "FAST003": {
+    "fix": "Sometimes",
+    "linter": "FastAPI",
+    "since": "0.10.0",
+    "slug": "fast-api-unused-path-parameter",
+    "status": "Stable",
+    "summary": "Parameter `{arg_name}` appears in route path, but not in `{function_name}` signature"
+  },
+  "FBT001": {
+    "fix": "None",
+    "linter": "flake8-boolean-trap",
+    "since": "v0.0.127",
+    "slug": "boolean-type-hint-positional-argument",
+    "status": "Stable",
+    "summary": "Boolean-typed positional argument in function definition"
+  },
+  "FBT002": {
+    "fix": "None",
+    "linter": "flake8-boolean-trap",
+    "since": "v0.0.127",
+    "slug": "boolean-default-value-positional-argument",
+    "status": "Stable",
+    "summary": "Boolean default positional argument in function definition"
+  },
+  "FBT003": {
+    "fix": "None",
+    "linter": "flake8-boolean-trap",
+    "since": "v0.0.127",
+    "slug": "boolean-positional-value-in-call",
+    "status": "Stable",
+    "summary": "Boolean positional value in function call"
+  },
+  "FIX001": {
+    "fix": "None",
+    "linter": "flake8-fixme",
+    "since": "v0.0.272",
+    "slug": "line-contains-fixme",
+    "status": "Stable",
+    "summary": "Line contains FIXME, consider resolving the issue"
+  },
+  "FIX002": {
+    "fix": "None",
+    "linter": "flake8-fixme",
+    "since": "v0.0.272",
+    "slug": "line-contains-todo",
+    "status": "Stable",
+    "summary": "Line contains TODO, consider resolving the issue"
+  },
+  "FIX003": {
+    "fix": "None",
+    "linter": "flake8-fixme",
+    "since": "v0.0.272",
+    "slug": "line-contains-xxx",
+    "status": "Stable",
+    "summary": "Line contains XXX, consider resolving the issue"
+  },
+  "FIX004": {
+    "fix": "None",
+    "linter": "flake8-fixme",
+    "since": "v0.0.272",
+    "slug": "line-contains-hack",
+    "status": "Stable",
+    "summary": "Line contains HACK, consider resolving the issue"
+  },
+  "FLY002": {
+    "fix": "Always",
+    "linter": "flynt",
+    "since": "v0.0.266",
+    "slug": "static-join-to-f-string",
+    "status": "Stable",
+    "summary": "Consider `{expression}` instead of string join"
+  },
+  "FURB101": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.1.2",
+    "slug": "read-whole-file",
+    "status": "Preview",
+    "summary": "`Path.open()` followed by `read()` can be replaced by `{filename}.{suggestion}`"
+  },
+  "FURB103": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.3.6",
+    "slug": "write-whole-file",
+    "status": "Preview",
+    "summary": "`Path.open()` followed by `write()` can be replaced by `{filename}.{suggestion}`"
+  },
+  "FURB105": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "print-empty-string",
+    "status": "Stable",
+    "summary": "Unnecessary empty string passed to `print`"
+  },
+  "FURB110": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.15.0",
+    "slug": "if-exp-instead-of-or-operator",
+    "status": "Stable",
+    "summary": "Replace ternary `if` expression with `or` operator"
+  },
+  "FURB113": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.0.287",
+    "slug": "repeated-append",
+    "status": "Preview",
+    "summary": "Use `{suggestion}` instead of repeatedly calling `{name}.append()`"
+  },
+  "FURB116": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.13.0",
+    "slug": "f-string-number-format",
+    "status": "Stable",
+    "summary": "Replace `{function_name}` call with `{display}`"
+  },
+  "FURB118": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.1.9",
+    "slug": "reimplemented-operator",
+    "status": "Preview",
+    "summary": "Use `operator.{operator}` instead of defining a {target}"
+  },
+  "FURB122": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.12.0",
+    "slug": "for-loop-writes",
+    "status": "Stable",
+    "summary": "Use of `{}.write` in a for loop"
+  },
+  "FURB129": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "readlines-in-for",
+    "status": "Stable",
+    "summary": "Instead of calling `readlines()`, iterate over file object directly"
+  },
+  "FURB131": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.0.287",
+    "slug": "delete-full-slice",
+    "status": "Preview",
+    "summary": "Prefer `clear` over deleting a full slice"
+  },
+  "FURB132": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.12.0",
+    "slug": "check-and-remove-from-set",
+    "status": "Stable",
+    "summary": "Use `{suggestion}` instead of check and `remove`"
+  },
+  "FURB136": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "if-expr-min-max",
+    "status": "Stable",
+    "summary": "Replace `if` expression with `{min_max}` call"
+  },
+  "FURB140": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.0.291",
+    "slug": "reimplemented-starmap",
+    "status": "Preview",
+    "summary": "Use `itertools.starmap` instead of the generator"
+  },
+  "FURB142": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "v0.3.5",
+    "slug": "for-loop-set-mutations",
+    "status": "Preview",
+    "summary": "Use of `set.{}()` in a for loop"
+  },
+  "FURB145": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.0.290",
+    "slug": "slice-copy",
+    "status": "Preview",
+    "summary": "Prefer `copy` method over slicing"
+  },
+  "FURB148": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.0.291",
+    "slug": "unnecessary-enumerate",
+    "status": "Preview",
+    "summary": "`enumerate` value is unused, use `for x in range(len(y))` instead"
+  },
+  "FURB152": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.1.6",
+    "slug": "math-constant",
+    "status": "Preview",
+    "summary": "Replace `{literal}` with `math.{constant}`"
+  },
+  "FURB154": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "v0.4.9",
+    "slug": "repeated-global",
+    "status": "Preview",
+    "summary": "Use of repeated consecutive `{}`"
+  },
+  "FURB156": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.7.0",
+    "slug": "hardcoded-string-charset",
+    "status": "Preview",
+    "summary": "Use of hardcoded string charset"
+  },
+  "FURB157": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.12.0",
+    "slug": "verbose-decimal-constructor",
+    "status": "Stable",
+    "summary": "Verbose expression in `Decimal` constructor"
+  },
+  "FURB161": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "bit-count",
+    "status": "Stable",
+    "summary": "Use of `bin({existing}).count('1')`"
+  },
+  "FURB162": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.12.0",
+    "slug": "fromisoformat-replace-z",
+    "status": "Stable",
+    "summary": "Unnecessary timezone replacement with zero offset"
+  },
+  "FURB163": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "redundant-log-base",
+    "status": "Stable",
+    "summary": "Prefer `math.{log_function}({arg})` over `math.log` with a redundant base"
+  },
+  "FURB164": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.3.5",
+    "slug": "unnecessary-from-float",
+    "status": "Preview",
+    "summary": "Verbose method `{method_name}` in `{constructor}` construction"
+  },
+  "FURB166": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.12.0",
+    "slug": "int-on-sliced-str",
+    "status": "Stable",
+    "summary": "Use of `int` with explicit `base={base}` after removing prefix"
+  },
+  "FURB167": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "regex-flag-alias",
+    "status": "Stable",
+    "summary": "Use of regular expression alias `re.{}`"
+  },
+  "FURB168": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "isinstance-type-none",
+    "status": "Stable",
+    "summary": "Prefer `is` operator over `isinstance` to check if an object is `None`"
+  },
+  "FURB169": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "type-none-comparison",
+    "status": "Stable",
+    "summary": "When checking against `None`, use `{}` instead of comparison with `type(None)`"
+  },
+  "FURB171": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.15.0",
+    "slug": "single-item-membership-test",
+    "status": "Stable",
+    "summary": "Membership test against single-item container"
+  },
+  "FURB177": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "implicit-cwd",
+    "status": "Stable",
+    "summary": "Prefer `Path.cwd()` over `Path().resolve()` for current-directory lookups"
+  },
+  "FURB180": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "v0.2.0",
+    "slug": "meta-class-abc-meta",
+    "status": "Preview",
+    "summary": "Use of `metaclass=abc.ABCMeta` to define abstract base class"
+  },
+  "FURB181": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "hashlib-digest-hex",
+    "status": "Stable",
+    "summary": "Use of hashlib's `.digest().hex()`"
+  },
+  "FURB187": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.5.0",
+    "slug": "list-reverse-copy",
+    "status": "Stable",
+    "summary": "Use of assignment of `reversed` on list `{name}`"
+  },
+  "FURB188": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.9.0",
+    "slug": "slice-to-remove-prefix-or-suffix",
+    "status": "Stable",
+    "summary": "Prefer `str.removeprefix()` over conditionally replacing with slice."
+  },
+  "FURB189": {
+    "fix": "Always",
+    "linter": "refurb",
+    "since": "0.7.3",
+    "slug": "subclass-builtin",
+    "status": "Preview",
+    "summary": "Subclassing `{subclass}` can be error prone, use `collections.{replacement}` instead"
+  },
+  "FURB192": {
+    "fix": "Sometimes",
+    "linter": "refurb",
+    "since": "v0.4.2",
+    "slug": "sorted-min-max",
+    "status": "Preview",
+    "summary": "Prefer `min` over `sorted()` to compute the minimum value in a sequence"
+  }
+}

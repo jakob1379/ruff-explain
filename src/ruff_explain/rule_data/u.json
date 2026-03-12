@@ -1,0 +1,378 @@
+{
+  "UP001": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "useless-metaclass-type",
+    "status": "Stable",
+    "summary": "`__metaclass__ = type` is implied"
+  },
+  "UP003": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "type-of-primitive",
+    "status": "Stable",
+    "summary": "Use `{}` instead of `type(...)`"
+  },
+  "UP004": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "useless-object-inheritance",
+    "status": "Stable",
+    "summary": "Class `{name}` inherits from `object`"
+  },
+  "UP005": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "deprecated-unittest-alias",
+    "status": "Stable",
+    "summary": "`{alias}` is deprecated, use `{target}`"
+  },
+  "UP006": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "non-pep585-annotation",
+    "status": "Stable",
+    "summary": "Use `{to}` instead of `{from}` for type annotation"
+  },
+  "UP007": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "non-pep604-annotation-union",
+    "status": "Stable",
+    "summary": "Use `X | Y` for type annotations"
+  },
+  "UP008": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "super-call-with-parameters",
+    "status": "Stable",
+    "summary": "Use `super()` instead of `super(__class__, self)`"
+  },
+  "UP009": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "utf8-encoding-declaration",
+    "status": "Stable",
+    "summary": "UTF-8 encoding declaration is unnecessary"
+  },
+  "UP010": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "unnecessary-future-import",
+    "status": "Stable",
+    "summary": "Unnecessary `__future__` import `{import}` for target Python version"
+  },
+  "UP011": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "lru-cache-without-parameters",
+    "status": "Stable",
+    "summary": "Unnecessary parentheses to `functools.lru_cache`"
+  },
+  "UP012": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "unnecessary-encode-utf8",
+    "status": "Stable",
+    "summary": "Unnecessary call to `encode` as UTF-8"
+  },
+  "UP013": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "convert-typed-dict-functional-to-class",
+    "status": "Stable",
+    "summary": "Convert `{name}` from `TypedDict` functional to class syntax"
+  },
+  "UP014": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "convert-named-tuple-functional-to-class",
+    "status": "Stable",
+    "summary": "Convert `{name}` from `NamedTuple` functional to class syntax"
+  },
+  "UP015": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.155",
+    "slug": "redundant-open-modes",
+    "status": "Stable",
+    "summary": "Unnecessary mode argument"
+  },
+  "UP017": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.192",
+    "slug": "datetime-timezone-utc",
+    "status": "Stable",
+    "summary": "Use `datetime.UTC` alias"
+  },
+  "UP018": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.193",
+    "slug": "native-literals",
+    "status": "Stable",
+    "summary": "Unnecessary `{literal_type}` call (rewrite as a literal)"
+  },
+  "UP019": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.195",
+    "slug": "typing-text-str-alias",
+    "status": "Stable",
+    "summary": "`{}.Text` is deprecated, use `str`"
+  },
+  "UP020": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.196",
+    "slug": "open-alias",
+    "status": "Stable",
+    "summary": "Use builtin `open`"
+  },
+  "UP021": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.196",
+    "slug": "replace-universal-newlines",
+    "status": "Stable",
+    "summary": "`universal_newlines` is deprecated, use `text`"
+  },
+  "UP022": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.199",
+    "slug": "replace-stdout-stderr",
+    "status": "Stable",
+    "summary": "Prefer `capture_output` over sending `stdout` and `stderr` to `PIPE`"
+  },
+  "UP023": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.199",
+    "slug": "deprecated-c-element-tree",
+    "status": "Stable",
+    "summary": "`cElementTree` is deprecated, use `ElementTree`"
+  },
+  "UP024": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.206",
+    "slug": "os-error-alias",
+    "status": "Stable",
+    "summary": "Replace aliased errors with `OSError`"
+  },
+  "UP025": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.201",
+    "slug": "unicode-kind-prefix",
+    "status": "Stable",
+    "summary": "Remove unicode literals from strings"
+  },
+  "UP026": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.206",
+    "slug": "deprecated-mock-import",
+    "status": "Stable",
+    "summary": "`mock` is deprecated, use `unittest.mock`"
+  },
+  "UP027": {
+    "fix": "None",
+    "linter": "pyupgrade",
+    "since": "0.8.0",
+    "slug": "unpacked-list-comprehension",
+    "status": "Removed",
+    "summary": "Replace unpacked list comprehension with a generator expression"
+  },
+  "UP028": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.210",
+    "slug": "yield-in-for-loop",
+    "status": "Stable",
+    "summary": "Replace `yield` over `for` loop with `yield from`"
+  },
+  "UP029": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.211",
+    "slug": "unnecessary-builtin-import",
+    "status": "Stable",
+    "summary": "Unnecessary builtin import: `{import}`"
+  },
+  "UP030": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.218",
+    "slug": "format-literals",
+    "status": "Stable",
+    "summary": "Use implicit references for positional format fields"
+  },
+  "UP031": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.229",
+    "slug": "printf-string-formatting",
+    "status": "Stable",
+    "summary": "Use format specifiers instead of percent format"
+  },
+  "UP032": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.224",
+    "slug": "f-string",
+    "status": "Stable",
+    "summary": "Use f-string instead of `format` call"
+  },
+  "UP033": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.225",
+    "slug": "lru-cache-with-maxsize-none",
+    "status": "Stable",
+    "summary": "Use `@functools.cache` instead of `@functools.lru_cache(maxsize=None)`"
+  },
+  "UP034": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.228",
+    "slug": "extraneous-parentheses",
+    "status": "Stable",
+    "summary": "Avoid extraneous parentheses"
+  },
+  "UP035": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.239",
+    "slug": "deprecated-import",
+    "status": "Stable",
+    "summary": "Import from `{target}` instead: {names}"
+  },
+  "UP036": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "v0.0.240",
+    "slug": "outdated-version-block",
+    "status": "Stable",
+    "summary": "Version block is outdated for minimum Python version"
+  },
+  "UP037": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.242",
+    "slug": "quoted-annotation",
+    "status": "Stable",
+    "summary": "Remove quotes from type annotation"
+  },
+  "UP038": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "0.13.0",
+    "slug": "non-pep604-isinstance",
+    "status": "Removed",
+    "summary": "Use `X | Y` in `{}` call instead of `(X, Y)`"
+  },
+  "UP039": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.273",
+    "slug": "unnecessary-class-parentheses",
+    "status": "Stable",
+    "summary": "Unnecessary parentheses after class definition"
+  },
+  "UP040": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.0.283",
+    "slug": "non-pep695-type-alias",
+    "status": "Stable",
+    "summary": "Type alias `{name}` uses {type_alias_method} instead of the `type` keyword"
+  },
+  "UP041": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "v0.2.0",
+    "slug": "timeout-error-alias",
+    "status": "Stable",
+    "summary": "Replace aliased errors with `TimeoutError`"
+  },
+  "UP042": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "0.15.0",
+    "slug": "replace-str-enum",
+    "status": "Stable",
+    "summary": "Class {name} inherits from both `str` and `enum.Enum`"
+  },
+  "UP043": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "0.8.0",
+    "slug": "unnecessary-default-type-args",
+    "status": "Stable",
+    "summary": "Unnecessary default type arguments"
+  },
+  "UP044": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "0.10.0",
+    "slug": "non-pep646-unpack",
+    "status": "Stable",
+    "summary": "Use `*` for unpacking"
+  },
+  "UP045": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "0.12.0",
+    "slug": "non-pep604-annotation-optional",
+    "status": "Stable",
+    "summary": "Use `X | None` for type annotations"
+  },
+  "UP046": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "0.12.0",
+    "slug": "non-pep695-generic-class",
+    "status": "Stable",
+    "summary": "Generic class `{name}` uses `Generic` subclass instead of type parameters"
+  },
+  "UP047": {
+    "fix": "Always",
+    "linter": "pyupgrade",
+    "since": "0.12.0",
+    "slug": "non-pep695-generic-function",
+    "status": "Stable",
+    "summary": "Generic function `{name}` should use type parameters"
+  },
+  "UP049": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "0.12.0",
+    "slug": "private-type-parameter",
+    "status": "Stable",
+    "summary": "Generic {} uses private type parameters"
+  },
+  "UP050": {
+    "fix": "Sometimes",
+    "linter": "pyupgrade",
+    "since": "0.13.0",
+    "slug": "useless-class-metaclass-type",
+    "status": "Stable",
+    "summary": "Class `{name}` uses `metaclass=type`, which is redundant"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "C400": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.61",
+    "slug": "unnecessary-generator-list",
+    "status": "Stable",
+    "summary": "Unnecessary generator (rewrite using `list()`)"
+  },
+  "C401": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.61",
+    "slug": "unnecessary-generator-set",
+    "status": "Stable",
+    "summary": "Unnecessary generator (rewrite using `set()`)"
+  },
+  "C402": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.61",
+    "slug": "unnecessary-generator-dict",
+    "status": "Stable",
+    "summary": "Unnecessary generator (rewrite as a dict comprehension)"
+  },
+  "C403": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.58",
+    "slug": "unnecessary-list-comprehension-set",
+    "status": "Stable",
+    "summary": "Unnecessary list comprehension (rewrite as a set comprehension)"
+  },
+  "C404": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.58",
+    "slug": "unnecessary-list-comprehension-dict",
+    "status": "Stable",
+    "summary": "Unnecessary list comprehension (rewrite as a dict comprehension)"
+  },
+  "C405": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.61",
+    "slug": "unnecessary-literal-set",
+    "status": "Stable",
+    "summary": "Unnecessary {kind} literal (rewrite as a set literal)"
+  },
+  "C406": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.61",
+    "slug": "unnecessary-literal-dict",
+    "status": "Stable",
+    "summary": "Unnecessary {obj_type} literal (rewrite as a dict literal)"
+  },
+  "C408": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.61",
+    "slug": "unnecessary-collection-call",
+    "status": "Stable",
+    "summary": "Unnecessary `{kind}()` call (rewrite as a literal)"
+  },
+  "C409": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.66",
+    "slug": "unnecessary-literal-within-tuple-call",
+    "status": "Stable",
+    "summary": "Unnecessary list literal passed to `tuple()` (rewrite as a tuple literal)"
+  },
+  "C410": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.66",
+    "slug": "unnecessary-literal-within-list-call",
+    "status": "Stable",
+    "summary": "Unnecessary list literal passed to `list()` (remove the outer call to `list()`)"
+  },
+  "C411": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.73",
+    "slug": "unnecessary-list-call",
+    "status": "Stable",
+    "summary": "Unnecessary `list()` call (remove the outer call to `list()`)"
+  },
+  "C413": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.73",
+    "slug": "unnecessary-call-around-sorted",
+    "status": "Stable",
+    "summary": "Unnecessary `{func}()` call around `sorted()`"
+  },
+  "C414": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.70",
+    "slug": "unnecessary-double-cast-or-process",
+    "status": "Stable",
+    "summary": "Unnecessary `{inner}()` call within `{outer}()`"
+  },
+  "C415": {
+    "fix": "None",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.64",
+    "slug": "unnecessary-subscript-reversal",
+    "status": "Stable",
+    "summary": "Unnecessary subscript reversal of iterable within `{func}()`"
+  },
+  "C416": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.73",
+    "slug": "unnecessary-comprehension",
+    "status": "Stable",
+    "summary": "Unnecessary {kind} comprehension (rewrite using `{kind}()`)"
+  },
+  "C417": {
+    "fix": "Sometimes",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.74",
+    "slug": "unnecessary-map",
+    "status": "Stable",
+    "summary": "Unnecessary `map()` usage (rewrite using a {object_type})"
+  },
+  "C418": {
+    "fix": "Always",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.262",
+    "slug": "unnecessary-literal-within-dict-call",
+    "status": "Stable",
+    "summary": "Unnecessary dict {kind} passed to `dict()` (remove the outer call to `dict()`)"
+  },
+  "C419": {
+    "fix": "Sometimes",
+    "linter": "flake8-comprehensions",
+    "since": "v0.0.262",
+    "slug": "unnecessary-comprehension-in-call",
+    "status": "Stable",
+    "summary": "Unnecessary list comprehension"
+  },
+  "C420": {
+    "fix": "Sometimes",
+    "linter": "flake8-comprehensions",
+    "since": "0.10.0",
+    "slug": "unnecessary-dict-comprehension-for-iterable",
+    "status": "Stable",
+    "summary": "Unnecessary dict comprehension for iterable; use `dict.fromkeys` instead"
+  },
+  "C901": {
+    "fix": "None",
+    "linter": "mccabe",
+    "since": "v0.0.127",
+    "slug": "complex-structure",
+    "status": "Stable",
+    "summary": "`{name}` is too complex ({complexity} > {max_complexity})"
+  },
+  "COM812": {
+    "fix": "Always",
+    "linter": "flake8-commas",
+    "since": "v0.0.223",
+    "slug": "missing-trailing-comma",
+    "status": "Stable",
+    "summary": "Trailing comma missing"
+  },
+  "COM818": {
+    "fix": "None",
+    "linter": "flake8-commas",
+    "since": "v0.0.223",
+    "slug": "trailing-comma-on-bare-tuple",
+    "status": "Stable",
+    "summary": "Trailing comma on bare tuple prohibited"
+  },
+  "COM819": {
+    "fix": "Always",
+    "linter": "flake8-commas",
+    "since": "v0.0.223",
+    "slug": "prohibited-trailing-comma",
+    "status": "Stable",
+    "summary": "Trailing comma prohibited"
+  },
+  "CPY001": {
+    "fix": "None",
+    "linter": "flake8-copyright",
+    "since": "v0.0.273",
+    "slug": "missing-copyright-notice",
+    "status": "Preview",
+    "summary": "Missing copyright notice at top of file"
+  }
+}

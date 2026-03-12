@@ -1,0 +1,42 @@
+{
+  "Q000": {
+    "fix": "Sometimes",
+    "linter": "flake8-quotes",
+    "since": "v0.0.88",
+    "slug": "bad-quotes-inline-string",
+    "status": "Stable",
+    "summary": "Single quotes found but double quotes preferred"
+  },
+  "Q001": {
+    "fix": "Always",
+    "linter": "flake8-quotes",
+    "since": "v0.0.88",
+    "slug": "bad-quotes-multiline-string",
+    "status": "Stable",
+    "summary": "Single quote multiline found but double quotes preferred"
+  },
+  "Q002": {
+    "fix": "Sometimes",
+    "linter": "flake8-quotes",
+    "since": "v0.0.88",
+    "slug": "bad-quotes-docstring",
+    "status": "Stable",
+    "summary": "Single quote docstring found but double quotes preferred"
+  },
+  "Q003": {
+    "fix": "Always",
+    "linter": "flake8-quotes",
+    "since": "v0.0.88",
+    "slug": "avoidable-escaped-quote",
+    "status": "Stable",
+    "summary": "Change outer quotes to avoid escaping inner quotes"
+  },
+  "Q004": {
+    "fix": "Always",
+    "linter": "flake8-quotes",
+    "since": "v0.2.0",
+    "slug": "unnecessary-escaped-quote",
+    "status": "Stable",
+    "summary": "Unnecessary escape on inner quote character"
+  }
+}

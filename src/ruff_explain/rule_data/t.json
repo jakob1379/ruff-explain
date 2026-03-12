@@ -1,0 +1,258 @@
+{
+  "T100": {
+    "fix": "None",
+    "linter": "flake8-debugger",
+    "since": "v0.0.141",
+    "slug": "debugger",
+    "status": "Stable",
+    "summary": "Trace found: `{name}` used"
+  },
+  "T201": {
+    "fix": "Sometimes",
+    "linter": "flake8-print",
+    "since": "v0.0.57",
+    "slug": "print",
+    "status": "Stable",
+    "summary": "`print` found"
+  },
+  "T203": {
+    "fix": "Sometimes",
+    "linter": "flake8-print",
+    "since": "v0.0.57",
+    "slug": "p-print",
+    "status": "Stable",
+    "summary": "`pprint` found"
+  },
+  "TC001": {
+    "fix": "Sometimes",
+    "linter": "flake8-type-checking",
+    "since": "0.8.0",
+    "slug": "typing-only-first-party-import",
+    "status": "Stable",
+    "summary": "Move application import `{}` into a type-checking block"
+  },
+  "TC002": {
+    "fix": "Sometimes",
+    "linter": "flake8-type-checking",
+    "since": "0.8.0",
+    "slug": "typing-only-third-party-import",
+    "status": "Stable",
+    "summary": "Move third-party import `{}` into a type-checking block"
+  },
+  "TC003": {
+    "fix": "Sometimes",
+    "linter": "flake8-type-checking",
+    "since": "0.8.0",
+    "slug": "typing-only-standard-library-import",
+    "status": "Stable",
+    "summary": "Move standard library import `{}` into a type-checking block"
+  },
+  "TC004": {
+    "fix": "Sometimes",
+    "linter": "flake8-type-checking",
+    "since": "0.8.0",
+    "slug": "runtime-import-in-type-checking-block",
+    "status": "Stable",
+    "summary": "Move import `{qualified_name}` out of type-checking block. Import is used for more than type hinting."
+  },
+  "TC005": {
+    "fix": "Always",
+    "linter": "flake8-type-checking",
+    "since": "0.8.0",
+    "slug": "empty-type-checking-block",
+    "status": "Stable",
+    "summary": "Found empty type-checking block"
+  },
+  "TC006": {
+    "fix": "Always",
+    "linter": "flake8-type-checking",
+    "since": "0.10.0",
+    "slug": "runtime-cast-value",
+    "status": "Stable",
+    "summary": "Add quotes to type expression in `typing.cast()`"
+  },
+  "TC007": {
+    "fix": "Sometimes",
+    "linter": "flake8-type-checking",
+    "since": "0.10.0",
+    "slug": "unquoted-type-alias",
+    "status": "Stable",
+    "summary": "Add quotes to type alias"
+  },
+  "TC008": {
+    "fix": "Always",
+    "linter": "flake8-type-checking",
+    "since": "0.8.1",
+    "slug": "quoted-type-alias",
+    "status": "Preview",
+    "summary": "Remove quotes from type alias"
+  },
+  "TC010": {
+    "fix": "None",
+    "linter": "flake8-type-checking",
+    "since": "0.8.0",
+    "slug": "runtime-string-union",
+    "status": "Stable",
+    "summary": "Invalid string member in `X | Y`-style union type"
+  },
+  "TD001": {
+    "fix": "None",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "invalid-todo-tag",
+    "status": "Stable",
+    "summary": "Invalid TODO tag: `{tag}`"
+  },
+  "TD002": {
+    "fix": "None",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "missing-todo-author",
+    "status": "Stable",
+    "summary": "Missing author in TODO; try: `# TODO(<author_name>): ...` or `# TODO @<author_name>: ...`"
+  },
+  "TD003": {
+    "fix": "None",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "missing-todo-link",
+    "status": "Stable",
+    "summary": "Missing issue link for this TODO"
+  },
+  "TD004": {
+    "fix": "None",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "missing-todo-colon",
+    "status": "Stable",
+    "summary": "Missing colon in TODO"
+  },
+  "TD005": {
+    "fix": "None",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "missing-todo-description",
+    "status": "Stable",
+    "summary": "Missing issue description after `TODO`"
+  },
+  "TD006": {
+    "fix": "Always",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "invalid-todo-capitalization",
+    "status": "Stable",
+    "summary": "Invalid TODO capitalization: `{tag}` should be `TODO`"
+  },
+  "TD007": {
+    "fix": "None",
+    "linter": "flake8-todos",
+    "since": "v0.0.269",
+    "slug": "missing-space-after-todo-colon",
+    "status": "Stable",
+    "summary": "Missing space after colon in TODO"
+  },
+  "TID251": {
+    "fix": "None",
+    "linter": "flake8-tidy-imports",
+    "since": "v0.0.201",
+    "slug": "banned-api",
+    "status": "Stable",
+    "summary": "`{name}` is banned: {message}"
+  },
+  "TID252": {
+    "fix": "Sometimes",
+    "linter": "flake8-tidy-imports",
+    "since": "v0.0.169",
+    "slug": "relative-imports",
+    "status": "Stable",
+    "summary": "Prefer absolute imports over relative imports from parent modules"
+  },
+  "TID253": {
+    "fix": "None",
+    "linter": "flake8-tidy-imports",
+    "since": "v0.0.285",
+    "slug": "banned-module-level-imports",
+    "status": "Stable",
+    "summary": "`{name}` is banned at the module level"
+  },
+  "TRY002": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.0.236",
+    "slug": "raise-vanilla-class",
+    "status": "Stable",
+    "summary": "Create your own exception"
+  },
+  "TRY003": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.0.236",
+    "slug": "raise-vanilla-args",
+    "status": "Stable",
+    "summary": "Avoid specifying long messages outside the exception class"
+  },
+  "TRY004": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.0.230",
+    "slug": "type-check-without-type-error",
+    "status": "Stable",
+    "summary": "Prefer `TypeError` exception for invalid type"
+  },
+  "TRY200": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.2.0",
+    "slug": "reraise-no-cause",
+    "status": "Removed",
+    "summary": "Use `raise from` to specify exception cause"
+  },
+  "TRY201": {
+    "fix": "Always",
+    "linter": "tryceratops",
+    "since": "v0.0.231",
+    "slug": "verbose-raise",
+    "status": "Stable",
+    "summary": "Use `raise` without specifying exception name"
+  },
+  "TRY203": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "0.7.0",
+    "slug": "useless-try-except",
+    "status": "Stable",
+    "summary": "Remove exception handler; error is immediately re-raised"
+  },
+  "TRY300": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.0.229",
+    "slug": "try-consider-else",
+    "status": "Stable",
+    "summary": "Consider moving this statement to an `else` block"
+  },
+  "TRY301": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.0.233",
+    "slug": "raise-within-try",
+    "status": "Stable",
+    "summary": "Abstract `raise` to an inner function"
+  },
+  "TRY400": {
+    "fix": "Sometimes",
+    "linter": "tryceratops",
+    "since": "v0.0.236",
+    "slug": "error-instead-of-exception",
+    "status": "Stable",
+    "summary": "Use `logging.exception` instead of `logging.error`"
+  },
+  "TRY401": {
+    "fix": "None",
+    "linter": "tryceratops",
+    "since": "v0.0.250",
+    "slug": "verbose-log-message",
+    "status": "Stable",
+    "summary": "Redundant exception object included in `logging.exception` call"
+  }
+}
