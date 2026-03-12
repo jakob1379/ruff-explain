@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from dataclasses import dataclass, field
 from http.client import HTTPSConnection
 from html.parser import HTMLParser

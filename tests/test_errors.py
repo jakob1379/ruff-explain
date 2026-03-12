@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from ruff_explain.errors import UnknownRuleError
 
 
