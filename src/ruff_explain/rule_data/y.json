@@ -1,0 +1,82 @@
+{
+  "YTT101": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-slice3",
+    "status": "Stable",
+    "summary": "`sys.version[:3]` referenced (python3.10), use `sys.version_info`"
+  },
+  "YTT102": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version2",
+    "status": "Stable",
+    "summary": "`sys.version[2]` referenced (python3.10), use `sys.version_info`"
+  },
+  "YTT103": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-cmp-str3",
+    "status": "Stable",
+    "summary": "`sys.version` compared to string (python3.10), use `sys.version_info`"
+  },
+  "YTT201": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-info0-eq3",
+    "status": "Stable",
+    "summary": "`sys.version_info[0] == 3` referenced (python4), use `>=`"
+  },
+  "YTT202": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "six-py3",
+    "status": "Stable",
+    "summary": "`six.PY3` referenced (python4), use `not six.PY2`"
+  },
+  "YTT203": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-info1-cmp-int",
+    "status": "Stable",
+    "summary": "`sys.version_info[1]` compared to integer (python4), compare `sys.version_info` to tuple"
+  },
+  "YTT204": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-info-minor-cmp-int",
+    "status": "Stable",
+    "summary": "`sys.version_info.minor` compared to integer (python4), compare `sys.version_info` to tuple"
+  },
+  "YTT301": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version0",
+    "status": "Stable",
+    "summary": "`sys.version[0]` referenced (python10), use `sys.version_info`"
+  },
+  "YTT302": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-cmp-str10",
+    "status": "Stable",
+    "summary": "`sys.version` compared to string (python10), use `sys.version_info`"
+  },
+  "YTT303": {
+    "fix": "None",
+    "linter": "flake8-2020",
+    "since": "v0.0.113",
+    "slug": "sys-version-slice1",
+    "status": "Stable",
+    "summary": "`sys.version[:1]` referenced (python10), use `sys.version_info`"
+  }
+}

@@ -6,8 +6,9 @@ import webbrowser
 import typer
 from rich.console import Console
 
-from .render import RulePageError, build_rule_renderable
-from .rules import BASE_URL, RULES
+from .errors import RulePageError, UnknownRuleError
+from .render import build_rule_renderable
+from .rules import build_rule_url, normalize_rule_id, require_rule, rule_ids
 
 app = typer.Typer(
     add_completion=False, help="Look up Ruff rule documentation by rule ID."
@@ -16,16 +17,9 @@ console = Console()
 error_console = Console(stderr=True)
 
 
-def _rule_url(rule_id: str) -> str | None:
-    rule = RULES.get(rule_id.strip().upper())
-    if rule is None:
-        return None
-    return f"{BASE_URL}{rule['slug']}/"
-
-
 def _unknown_rule(rule_id: str) -> None:
-    normalized = rule_id.strip().upper()
-    matches = get_close_matches(normalized, RULES, n=3, cutoff=0.6)
+    normalized = normalize_rule_id(rule_id)
+    matches = get_close_matches(normalized, rule_ids(), n=3, cutoff=0.6)
     error_console.print(f"[bold red]Unknown Ruff rule:[/bold red] {normalized}")
     if matches:
         error_console.print(f"Did you mean: {', '.join(matches)}")
@@ -39,15 +33,19 @@ def lookup(
         False, "--open", "-o", help="Open the docs page in your browser."
     ),
 ) -> None:
-    url = _rule_url(rule_id)
-    if url is None:
+    normalized = normalize_rule_id(rule_id)
+    try:
+        rule = require_rule(normalized)
+    except UnknownRuleError:
         _unknown_rule(rule_id)
+        return
+
+    url = build_rule_url(rule)
 
     if open_page:
         webbrowser.open_new_tab(url)
         return
 
-    normalized = rule_id.strip().upper()
     try:
         console.print(build_rule_renderable(normalized, url, width=console.size.width))
     except RulePageError as exc:

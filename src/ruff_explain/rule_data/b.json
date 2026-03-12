@@ -1,0 +1,346 @@
+{
+  "B002": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.83",
+    "slug": "unary-prefix-increment-decrement",
+    "status": "Stable",
+    "summary": "Python does not support the unary prefix increment operator (`++`)"
+  },
+  "B003": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.102",
+    "slug": "assignment-to-os-environ",
+    "status": "Stable",
+    "summary": "Assigning to `os.environ` doesn't clear the environment"
+  },
+  "B004": {
+    "fix": "Sometimes",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.106",
+    "slug": "unreliable-callable-check",
+    "status": "Stable",
+    "summary": "Using `hasattr(x, \"__call__\")` to test if x is callable is unreliable. Use `callable(x)` for consistent results."
+  },
+  "B005": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.106",
+    "slug": "strip-with-multi-characters",
+    "status": "Stable",
+    "summary": "Using `.strip()` with multi-character strings is misleading"
+  },
+  "B006": {
+    "fix": "Sometimes",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.92",
+    "slug": "mutable-argument-default",
+    "status": "Stable",
+    "summary": "Do not use mutable data structures for argument defaults"
+  },
+  "B007": {
+    "fix": "Sometimes",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.84",
+    "slug": "unused-loop-control-variable",
+    "status": "Stable",
+    "summary": "Loop control variable `{name}` not used within loop body"
+  },
+  "B008": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.102",
+    "slug": "function-call-in-default-argument",
+    "status": "Stable",
+    "summary": "Do not perform function call `{name}` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable"
+  },
+  "B009": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.110",
+    "slug": "get-attr-with-constant",
+    "status": "Stable",
+    "summary": "Do not call `getattr` with a constant attribute value. It is not any safer than normal property access."
+  },
+  "B010": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.111",
+    "slug": "set-attr-with-constant",
+    "status": "Stable",
+    "summary": "Do not call `setattr` with a constant attribute value. It is not any safer than normal property access."
+  },
+  "B011": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.67",
+    "slug": "assert-false",
+    "status": "Stable",
+    "summary": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`"
+  },
+  "B012": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.116",
+    "slug": "jump-statement-in-finally",
+    "status": "Stable",
+    "summary": "`{name}` inside `finally` blocks cause exceptions to be silenced"
+  },
+  "B013": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.89",
+    "slug": "redundant-tuple-in-exception-handler",
+    "status": "Stable",
+    "summary": "A length-one tuple literal is redundant in exception handlers"
+  },
+  "B014": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.67",
+    "slug": "duplicate-handler-exception",
+    "status": "Stable",
+    "summary": "Exception handler with duplicate exception: `{name}`"
+  },
+  "B015": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.102",
+    "slug": "useless-comparison",
+    "status": "Stable",
+    "summary": "Pointless comparison. Did you mean to assign a value? Otherwise, prepend `assert` or remove it."
+  },
+  "B016": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.102",
+    "slug": "raise-literal",
+    "status": "Stable",
+    "summary": "Cannot raise a literal. Did you intend to return it or raise an Exception?"
+  },
+  "B017": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.83",
+    "slug": "assert-raises-exception",
+    "status": "Stable",
+    "summary": "Do not assert blind exception: `{exception}`"
+  },
+  "B018": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.100",
+    "slug": "useless-expression",
+    "status": "Stable",
+    "summary": "Found useless expression. Either assign it to a variable or remove it."
+  },
+  "B019": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.114",
+    "slug": "cached-instance-method",
+    "status": "Stable",
+    "summary": "Use of `functools.lru_cache` or `functools.cache` on methods can lead to memory leaks"
+  },
+  "B020": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.121",
+    "slug": "loop-variable-overrides-iterator",
+    "status": "Stable",
+    "summary": "Loop control variable `{name}` overrides iterable it iterates"
+  },
+  "B021": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.116",
+    "slug": "f-string-docstring",
+    "status": "Stable",
+    "summary": "f-string used as docstring. Python will interpret this as a joined string, rather than a docstring."
+  },
+  "B022": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.118",
+    "slug": "useless-contextlib-suppress",
+    "status": "Stable",
+    "summary": "No arguments passed to `contextlib.suppress`. No exceptions will be suppressed and therefore this context manager is redundant"
+  },
+  "B023": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.139",
+    "slug": "function-uses-loop-variable",
+    "status": "Stable",
+    "summary": "Function definition does not bind loop variable `{name}`"
+  },
+  "B024": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.118",
+    "slug": "abstract-base-class-without-abstract-method",
+    "status": "Stable",
+    "summary": "`{name}` is an abstract base class, but it has no abstract methods or properties"
+  },
+  "B025": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.67",
+    "slug": "duplicate-try-block-exception",
+    "status": "Stable",
+    "summary": "try-except* block with duplicate exception `{name}`"
+  },
+  "B026": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.109",
+    "slug": "star-arg-unpacking-after-keyword-arg",
+    "status": "Stable",
+    "summary": "Star-arg unpacking after a keyword argument is strongly discouraged"
+  },
+  "B027": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.118",
+    "slug": "empty-method-without-abstract-decorator",
+    "status": "Stable",
+    "summary": "`{name}` is an empty method in an abstract base class, but has no abstract decorator"
+  },
+  "B028": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.257",
+    "slug": "no-explicit-stacklevel",
+    "status": "Stable",
+    "summary": "No explicit `stacklevel` keyword argument found"
+  },
+  "B029": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.250",
+    "slug": "except-with-empty-tuple",
+    "status": "Stable",
+    "summary": "Using `except* ():` with an empty tuple does not catch anything; add exceptions to handle"
+  },
+  "B030": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.255",
+    "slug": "except-with-non-exception-classes",
+    "status": "Stable",
+    "summary": "`except*` handlers should only be exception classes or tuples of exception classes"
+  },
+  "B031": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.260",
+    "slug": "reuse-of-groupby-generator",
+    "status": "Stable",
+    "summary": "Using the generator returned from `itertools.groupby()` more than once will do nothing on the second usage"
+  },
+  "B032": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.250",
+    "slug": "unintentional-type-annotation",
+    "status": "Stable",
+    "summary": "Possible unintentional type annotation (using `:`). Did you mean to assign (using `=`)?"
+  },
+  "B033": {
+    "fix": "Sometimes",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.271",
+    "slug": "duplicate-value",
+    "status": "Stable",
+    "summary": "Sets should not contain duplicate item `{value}`"
+  },
+  "B034": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.278",
+    "slug": "re-sub-positional-args",
+    "status": "Stable",
+    "summary": "`{method}` should pass `{param_name}` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions"
+  },
+  "B035": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.2.0",
+    "slug": "static-key-dict-comprehension",
+    "status": "Stable",
+    "summary": "Dictionary comprehension uses static key: `{key}`"
+  },
+  "B039": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "0.8.0",
+    "slug": "mutable-contextvar-default",
+    "status": "Stable",
+    "summary": "Do not use mutable data structures for `ContextVar` defaults"
+  },
+  "B901": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.4.8",
+    "slug": "return-in-generator",
+    "status": "Preview",
+    "summary": "Using `yield` and `return {value}` in a generator function can lead to confusing behavior"
+  },
+  "B903": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "0.9.0",
+    "slug": "class-as-data-structure",
+    "status": "Preview",
+    "summary": "Class could be dataclass or namedtuple"
+  },
+  "B904": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.138",
+    "slug": "raise-without-from-inside-except",
+    "status": "Stable",
+    "summary": "Within an `except*` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling"
+  },
+  "B905": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "v0.0.167",
+    "slug": "zip-without-explicit-strict",
+    "status": "Stable",
+    "summary": "`zip()` without an explicit `strict=` parameter"
+  },
+  "B909": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "v0.3.7",
+    "slug": "loop-iterator-mutation",
+    "status": "Preview",
+    "summary": "Mutation to loop iterable `{name}` during iteration"
+  },
+  "B911": {
+    "fix": "None",
+    "linter": "flake8-bugbear",
+    "since": "0.10.0",
+    "slug": "batched-without-explicit-strict",
+    "status": "Stable",
+    "summary": "`itertools.batched()` without an explicit `strict` parameter"
+  },
+  "B912": {
+    "fix": "Always",
+    "linter": "flake8-bugbear",
+    "since": "0.15.0",
+    "slug": "map-without-explicit-strict",
+    "status": "Stable",
+    "summary": "`map()` without an explicit `strict=` parameter"
+  },
+  "BLE001": {
+    "fix": "None",
+    "linter": "flake8-blind-except",
+    "since": "v0.0.127",
+    "slug": "blind-except",
+    "status": "Stable",
+    "summary": "Do not catch blind exception: `{name}`"
+  }
+}

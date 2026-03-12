@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from http.client import HTTPSConnection
 from html.parser import HTMLParser
 import re
 from typing import Callable
-from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
+from urllib.parse import ParseResult, urlparse
 
 from rich.console import Group, RenderableType
 from rich.panel import Panel
@@ -13,7 +13,8 @@ from rich.syntax import Syntax
 from rich.table import Table
 from rich.text import Text
 
-from .rules import RULES
+from .errors import RulePageError
+from .rules import normalize_rule_id, require_rule
 
 _WHITESPACE_RE = re.compile(r"\s+")
 _TITLE_RE = re.compile(r"^(?P<name>.+?)\s+\((?P<code>[A-Z]+\d+)\)$")
@@ -22,10 +23,8 @@ _FIX_STYLES = {
     "Sometimes": "bold yellow",
     "None": "bold red",
 }
-
-
-class RulePageError(RuntimeError):
-    pass
+_DOCS_HOST = "docs.astral.sh"
+_DOCS_PATH_PREFIX = "/ruff/rules/"
 
 
 @dataclass
@@ -96,13 +95,30 @@ class _DomParser(HTMLParser):
 
 
 def fetch_rule_page(url: str) -> str:
-    request = Request(url, headers={"User-Agent": "ruff-explain"})
+    parsed = _validate_rule_url(url)
+    connection = HTTPSConnection(_DOCS_HOST, timeout=15)
     try:
-        with urlopen(request, timeout=15) as response:
+        connection.request("GET", parsed.path, headers={"User-Agent": "ruff-explain"})
+        with connection.getresponse() as response:
+            if response.status >= 400:
+                raise RulePageError(
+                    f"Could not fetch {url}: HTTP {response.status} {response.reason}"
+                )
             charset = response.headers.get_content_charset() or "utf-8"
             return response.read().decode(charset)
-    except (HTTPError, URLError) as exc:
+    except OSError as exc:
         raise RulePageError(f"Could not fetch {url}: {exc}") from exc
+    finally:
+        connection.close()
+
+
+def _validate_rule_url(url: str) -> ParseResult:
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or parsed.netloc != _DOCS_HOST:
+        raise RulePageError(f"Unsupported Ruff docs URL: {url}")
+    if not parsed.path.startswith(_DOCS_PATH_PREFIX):
+        raise RulePageError(f"Unsupported Ruff docs URL: {url}")
+    return parsed
 
 
 def build_rule_renderable(
@@ -118,6 +134,9 @@ def build_rule_renderable(
 
 
 def parse_rule_page(rule_id: str, url: str, html: str) -> RulePage:
+    normalized = normalize_rule_id(rule_id)
+    rule = require_rule(normalized)
+
     parser = _DomParser()
     parser.feed(html)
     article = _find_first(
@@ -127,11 +146,10 @@ def parse_rule_page(rule_id: str, url: str, html: str) -> RulePage:
     if article is None:
         raise RulePageError("Could not find the Ruff article content in the page.")
 
-    rule = RULES[rule_id]
-    title = _extract_title(article) or f"{rule['slug']} ({rule_id})"
+    title = _extract_title(article) or f"{rule.slug} ({normalized})"
     match = _TITLE_RE.match(title)
     name = match.group("name") if match else title
-    code = match.group("code") if match else rule_id
+    code = match.group("code") if match else normalized
 
     sections = _extract_sections(article)
     intro_blocks: list[ParagraphBlock | ListBlock | CodeBlock] = []
@@ -141,10 +159,10 @@ def parse_rule_page(rule_id: str, url: str, html: str) -> RulePage:
     return RulePage(
         name=name,
         code=code,
-        linter=rule["linter"],
-        status=rule["status"],
-        since=rule["since"],
-        fix=rule["fix"],
+        linter=rule.linter,
+        status=rule.status,
+        since=rule.since,
+        fix=rule.fix,
         url=url,
         intro_blocks=intro_blocks,
         sections=sections,
@@ -297,7 +315,12 @@ def _render_section(section: Section, width: int) -> RenderableType:
         return _render_example_section(section, width)
 
     body = _render_blocks(section.blocks)
-    return Panel(body, title=section.title, border_style="blue", padding=(0, 1))
+    return Panel(
+        body or Text(),
+        title=section.title,
+        border_style="blue",
+        padding=(0, 1),
+    )
 
 
 def _render_example_section(section: Section, width: int) -> RenderableType:
@@ -314,7 +337,7 @@ def _render_example_section(section: Section, width: int) -> RenderableType:
         target.append(block)
 
     example_panel = Panel(
-        _render_blocks(example_blocks),
+        _render_blocks(example_blocks) or Text(),
         title="Example: Python",
         border_style="yellow",
         padding=(0, 1),
@@ -323,7 +346,7 @@ def _render_example_section(section: Section, width: int) -> RenderableType:
         return example_panel
 
     preferred_panel = Panel(
-        _render_blocks(preferred_blocks),
+        _render_blocks(preferred_blocks) or Text(),
         title="Use instead: Python",
         border_style="green",
         padding=(0, 1),

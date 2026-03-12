@@ -1,0 +1,66 @@
+{
+  "G001": {
+    "fix": "None",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-string-format",
+    "status": "Stable",
+    "summary": "Logging statement uses `str.format`"
+  },
+  "G002": {
+    "fix": "None",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-percent-format",
+    "status": "Stable",
+    "summary": "Logging statement uses `%`"
+  },
+  "G003": {
+    "fix": "None",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-string-concat",
+    "status": "Stable",
+    "summary": "Logging statement uses `+`"
+  },
+  "G004": {
+    "fix": "Sometimes",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-f-string",
+    "status": "Stable",
+    "summary": "Logging statement uses f-string"
+  },
+  "G010": {
+    "fix": "Always",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-warn",
+    "status": "Stable",
+    "summary": "Logging statement uses `warn` instead of `warning`"
+  },
+  "G101": {
+    "fix": "None",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-extra-attr-clash",
+    "status": "Stable",
+    "summary": "Logging statement uses an `extra` field that clashes with a `LogRecord` field: `{key}`"
+  },
+  "G201": {
+    "fix": "None",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-exc-info",
+    "status": "Stable",
+    "summary": "Logging `.exception(...)` should be used instead of `.error(..., exc_info=True)`"
+  },
+  "G202": {
+    "fix": "None",
+    "linter": "flake8-logging-format",
+    "since": "v0.0.236",
+    "slug": "logging-redundant-exc-info",
+    "status": "Stable",
+    "summary": "Logging statement has redundant `exc_info`"
+  }
+}

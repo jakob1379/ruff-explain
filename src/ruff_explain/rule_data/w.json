@@ -1,0 +1,58 @@
+{
+  "W191": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.254",
+    "slug": "tab-indentation",
+    "status": "Stable",
+    "summary": "Indentation contains tabs"
+  },
+  "W291": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.253",
+    "slug": "trailing-whitespace",
+    "status": "Stable",
+    "summary": "Trailing whitespace"
+  },
+  "W292": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.61",
+    "slug": "missing-newline-at-end-of-file",
+    "status": "Stable",
+    "summary": "No newline at end of file"
+  },
+  "W293": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.253",
+    "slug": "blank-line-with-whitespace",
+    "status": "Stable",
+    "summary": "Blank line contains whitespace"
+  },
+  "W391": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.3.3",
+    "slug": "too-many-newlines-at-end-of-file",
+    "status": "Preview",
+    "summary": "Too many newlines at end of {domain}"
+  },
+  "W505": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.219",
+    "slug": "doc-line-too-long",
+    "status": "Stable",
+    "summary": "Doc line too long ({width} > {limit})"
+  },
+  "W605": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.85",
+    "slug": "invalid-escape-sequence",
+    "status": "Stable",
+    "summary": "Invalid escape sequence: `\\{ch}`"
+  }
+}

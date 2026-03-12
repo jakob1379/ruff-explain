@@ -1,0 +1,106 @@
+{
+  "I001": {
+    "fix": "Sometimes",
+    "linter": "isort",
+    "since": "v0.0.110",
+    "slug": "unsorted-imports",
+    "status": "Stable",
+    "summary": "Import block is un-sorted or un-formatted"
+  },
+  "I002": {
+    "fix": "Always",
+    "linter": "isort",
+    "since": "v0.0.218",
+    "slug": "missing-required-import",
+    "status": "Stable",
+    "summary": "Missing required import: `{name}`"
+  },
+  "ICN001": {
+    "fix": "Sometimes",
+    "linter": "flake8-import-conventions",
+    "since": "v0.0.166",
+    "slug": "unconventional-import-alias",
+    "status": "Stable",
+    "summary": "`{name}` should be imported as `{asname}`"
+  },
+  "ICN002": {
+    "fix": "None",
+    "linter": "flake8-import-conventions",
+    "since": "v0.0.262",
+    "slug": "banned-import-alias",
+    "status": "Stable",
+    "summary": "`{name}` should not be imported as `{asname}`"
+  },
+  "ICN003": {
+    "fix": "None",
+    "linter": "flake8-import-conventions",
+    "since": "v0.0.263",
+    "slug": "banned-import-from",
+    "status": "Stable",
+    "summary": "Members of `{name}` should not be imported explicitly"
+  },
+  "INP001": {
+    "fix": "None",
+    "linter": "flake8-no-pep420",
+    "since": "v0.0.225",
+    "slug": "implicit-namespace-package",
+    "status": "Stable",
+    "summary": "File `{filename}` is part of an implicit namespace package. Add an `__init__.py`."
+  },
+  "INT001": {
+    "fix": "None",
+    "linter": "flake8-gettext",
+    "since": "v0.0.260",
+    "slug": "f-string-in-get-text-func-call",
+    "status": "Stable",
+    "summary": "f-string in plural argument is resolved before function call"
+  },
+  "INT002": {
+    "fix": "None",
+    "linter": "flake8-gettext",
+    "since": "v0.0.260",
+    "slug": "format-in-get-text-func-call",
+    "status": "Stable",
+    "summary": "`format` method in plural argument is resolved before function call"
+  },
+  "INT003": {
+    "fix": "None",
+    "linter": "flake8-gettext",
+    "since": "v0.0.260",
+    "slug": "printf-in-get-text-func-call",
+    "status": "Stable",
+    "summary": "printf-style format in plural argument is resolved before function call"
+  },
+  "ISC001": {
+    "fix": "Sometimes",
+    "linter": "flake8-implicit-str-concat",
+    "since": "v0.0.201",
+    "slug": "single-line-implicit-string-concatenation",
+    "status": "Stable",
+    "summary": "Implicitly concatenated string literals on one line"
+  },
+  "ISC002": {
+    "fix": "None",
+    "linter": "flake8-implicit-str-concat",
+    "since": "v0.0.201",
+    "slug": "multi-line-implicit-string-concatenation",
+    "status": "Stable",
+    "summary": "Implicitly concatenated string literals over multiple lines"
+  },
+  "ISC003": {
+    "fix": "Sometimes",
+    "linter": "flake8-implicit-str-concat",
+    "since": "v0.0.201",
+    "slug": "explicit-string-concatenation",
+    "status": "Stable",
+    "summary": "Explicitly concatenated string should be implicitly concatenated"
+  },
+  "ISC004": {
+    "fix": "Always",
+    "linter": "flake8-implicit-str-concat",
+    "since": "0.14.10",
+    "slug": "implicit-string-concatenation-in-collection-literal",
+    "status": "Preview",
+    "summary": "Unparenthesized implicit string concatenation in collection"
+  }
+}

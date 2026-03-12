@@ -1,0 +1,554 @@
+{
+  "E101": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.229",
+    "slug": "mixed-spaces-and-tabs",
+    "status": "Stable",
+    "summary": "Indentation contains mixed spaces and tabs"
+  },
+  "E111": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "indentation-with-invalid-multiple",
+    "status": "Preview",
+    "summary": "Indentation is not a multiple of {indent_width}"
+  },
+  "E112": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "no-indented-block",
+    "status": "Preview",
+    "summary": "Expected an indented block"
+  },
+  "E113": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "unexpected-indentation",
+    "status": "Preview",
+    "summary": "Unexpected indentation"
+  },
+  "E114": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "indentation-with-invalid-multiple-comment",
+    "status": "Preview",
+    "summary": "Indentation is not a multiple of {indent_width} (comment)"
+  },
+  "E115": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "no-indented-block-comment",
+    "status": "Preview",
+    "summary": "Expected an indented block (comment)"
+  },
+  "E116": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "unexpected-indentation-comment",
+    "status": "Preview",
+    "summary": "Unexpected indentation (comment)"
+  },
+  "E117": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "over-indented",
+    "status": "Preview",
+    "summary": "Over-indented (comment)"
+  },
+  "E201": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "whitespace-after-open-bracket",
+    "status": "Preview",
+    "summary": "Whitespace after '{symbol}'"
+  },
+  "E202": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "whitespace-before-close-bracket",
+    "status": "Preview",
+    "summary": "Whitespace before '{symbol}'"
+  },
+  "E203": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "whitespace-before-punctuation",
+    "status": "Preview",
+    "summary": "Whitespace before '{symbol}'"
+  },
+  "E204": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "0.5.1",
+    "slug": "whitespace-after-decorator",
+    "status": "Preview",
+    "summary": "Whitespace after decorator"
+  },
+  "E211": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "whitespace-before-parameters",
+    "status": "Preview",
+    "summary": "Whitespace before '{bracket}'"
+  },
+  "E221": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "multiple-spaces-before-operator",
+    "status": "Preview",
+    "summary": "Multiple spaces before operator"
+  },
+  "E222": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "multiple-spaces-after-operator",
+    "status": "Preview",
+    "summary": "Multiple spaces after operator"
+  },
+  "E223": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "tab-before-operator",
+    "status": "Preview",
+    "summary": "Tab before operator"
+  },
+  "E224": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "tab-after-operator",
+    "status": "Preview",
+    "summary": "Tab after operator"
+  },
+  "E225": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace-around-operator",
+    "status": "Preview",
+    "summary": "Missing whitespace around operator"
+  },
+  "E226": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace-around-arithmetic-operator",
+    "status": "Preview",
+    "summary": "Missing whitespace around arithmetic operator"
+  },
+  "E227": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace-around-bitwise-or-shift-operator",
+    "status": "Preview",
+    "summary": "Missing whitespace around bitwise or shift operator"
+  },
+  "E228": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace-around-modulo-operator",
+    "status": "Preview",
+    "summary": "Missing whitespace around modulo operator"
+  },
+  "E231": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace",
+    "status": "Preview",
+    "summary": "Missing whitespace after {}"
+  },
+  "E241": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.281",
+    "slug": "multiple-spaces-after-comma",
+    "status": "Preview",
+    "summary": "Multiple spaces after comma"
+  },
+  "E242": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.281",
+    "slug": "tab-after-comma",
+    "status": "Preview",
+    "summary": "Tab after comma"
+  },
+  "E251": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "unexpected-spaces-around-keyword-parameter-equals",
+    "status": "Preview",
+    "summary": "Unexpected spaces around keyword / parameter equals"
+  },
+  "E252": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace-around-parameter-equals",
+    "status": "Preview",
+    "summary": "Missing whitespace around parameter equals"
+  },
+  "E261": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "too-few-spaces-before-inline-comment",
+    "status": "Preview",
+    "summary": "Insert at least two spaces before an inline comment"
+  },
+  "E262": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "no-space-after-inline-comment",
+    "status": "Preview",
+    "summary": "Inline comment should start with `# `"
+  },
+  "E265": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "no-space-after-block-comment",
+    "status": "Preview",
+    "summary": "Block comment should start with `# `"
+  },
+  "E266": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "multiple-leading-hashes-for-block-comment",
+    "status": "Preview",
+    "summary": "Too many leading `#` before block comment"
+  },
+  "E271": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "multiple-spaces-after-keyword",
+    "status": "Preview",
+    "summary": "Multiple spaces after keyword"
+  },
+  "E272": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "multiple-spaces-before-keyword",
+    "status": "Preview",
+    "summary": "Multiple spaces before keyword"
+  },
+  "E273": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "tab-after-keyword",
+    "status": "Preview",
+    "summary": "Tab after keyword"
+  },
+  "E274": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "tab-before-keyword",
+    "status": "Preview",
+    "summary": "Tab before keyword"
+  },
+  "E275": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.269",
+    "slug": "missing-whitespace-after-keyword",
+    "status": "Preview",
+    "summary": "Missing whitespace after keyword"
+  },
+  "E301": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.2.2",
+    "slug": "blank-line-between-methods",
+    "status": "Preview",
+    "summary": "Expected {BLANK_LINES_NESTED_LEVEL:?} blank line, found 0"
+  },
+  "E302": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.2.2",
+    "slug": "blank-lines-top-level",
+    "status": "Preview",
+    "summary": "Expected {expected_blank_lines:?} blank lines, found {actual_blank_lines}"
+  },
+  "E303": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.2.2",
+    "slug": "too-many-blank-lines",
+    "status": "Preview",
+    "summary": "Too many blank lines ({actual_blank_lines})"
+  },
+  "E304": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.2.2",
+    "slug": "blank-line-after-decorator",
+    "status": "Preview",
+    "summary": "Blank lines found after function decorator ({lines})"
+  },
+  "E305": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.2.2",
+    "slug": "blank-lines-after-function-or-class",
+    "status": "Preview",
+    "summary": "Expected 2 blank lines after class or function definition, found ({blank_lines})"
+  },
+  "E306": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.2.2",
+    "slug": "blank-lines-before-nested-definition",
+    "status": "Preview",
+    "summary": "Expected 1 blank line before a nested definition, found 0"
+  },
+  "E401": {
+    "fix": "Sometimes",
+    "linter": "pycodestyle",
+    "since": "v0.0.191",
+    "slug": "multiple-imports-on-one-line",
+    "status": "Stable",
+    "summary": "Multiple imports on one line"
+  },
+  "E402": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "module-import-not-at-top-of-file",
+    "status": "Stable",
+    "summary": "Module level import not at top of cell"
+  },
+  "E501": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.18",
+    "slug": "line-too-long",
+    "status": "Stable",
+    "summary": "Line too long ({width} > {limit})"
+  },
+  "E502": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.3.3",
+    "slug": "redundant-backslash",
+    "status": "Preview",
+    "summary": "Redundant backslash"
+  },
+  "E701": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.245",
+    "slug": "multiple-statements-on-one-line-colon",
+    "status": "Stable",
+    "summary": "Multiple statements on one line (colon)"
+  },
+  "E702": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.245",
+    "slug": "multiple-statements-on-one-line-semicolon",
+    "status": "Stable",
+    "summary": "Multiple statements on one line (semicolon)"
+  },
+  "E703": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.245",
+    "slug": "useless-semicolon",
+    "status": "Stable",
+    "summary": "Statement ends with an unnecessary semicolon"
+  },
+  "E711": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "none-comparison",
+    "status": "Stable",
+    "summary": "Comparison to `None` should be `cond is None`"
+  },
+  "E712": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "true-false-comparison",
+    "status": "Stable",
+    "summary": "Avoid equality comparisons to `True`; use `{cond}:` for truth checks"
+  },
+  "E713": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "not-in-test",
+    "status": "Stable",
+    "summary": "Test for membership should be `not in`"
+  },
+  "E714": {
+    "fix": "Always",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "not-is-test",
+    "status": "Stable",
+    "summary": "Test for object identity should be `is not`"
+  },
+  "E721": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.39",
+    "slug": "type-comparison",
+    "status": "Stable",
+    "summary": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks"
+  },
+  "E722": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.36",
+    "slug": "bare-except",
+    "status": "Stable",
+    "summary": "Do not use bare `except`"
+  },
+  "E731": {
+    "fix": "Sometimes",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "lambda-assignment",
+    "status": "Stable",
+    "summary": "Do not assign a `lambda` expression, use a `def`"
+  },
+  "E741": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.34",
+    "slug": "ambiguous-variable-name",
+    "status": "Stable",
+    "summary": "Ambiguous variable name: `{name}`"
+  },
+  "E742": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.35",
+    "slug": "ambiguous-class-name",
+    "status": "Stable",
+    "summary": "Ambiguous class name: `{name}`"
+  },
+  "E743": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.35",
+    "slug": "ambiguous-function-name",
+    "status": "Stable",
+    "summary": "Ambiguous function name: `{name}`"
+  },
+  "E902": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "v0.0.28",
+    "slug": "io-error",
+    "status": "Stable",
+    "summary": "{message}"
+  },
+  "E999": {
+    "fix": "None",
+    "linter": "pycodestyle",
+    "since": "0.8.0",
+    "slug": "syntax-error",
+    "status": "Removed",
+    "summary": "SyntaxError"
+  },
+  "EM101": {
+    "fix": "Sometimes",
+    "linter": "flake8-errmsg",
+    "since": "v0.0.183",
+    "slug": "raw-string-in-exception",
+    "status": "Stable",
+    "summary": "Exception must not use a string literal, assign to variable first"
+  },
+  "EM102": {
+    "fix": "Sometimes",
+    "linter": "flake8-errmsg",
+    "since": "v0.0.183",
+    "slug": "f-string-in-exception",
+    "status": "Stable",
+    "summary": "Exception must not use an f-string literal, assign to variable first"
+  },
+  "EM103": {
+    "fix": "Sometimes",
+    "linter": "flake8-errmsg",
+    "since": "v0.0.183",
+    "slug": "dot-format-in-exception",
+    "status": "Stable",
+    "summary": "Exception must not use a `.format()` string directly, assign to variable first"
+  },
+  "ERA001": {
+    "fix": "None",
+    "linter": "eradicate",
+    "since": "v0.0.145",
+    "slug": "commented-out-code",
+    "status": "Stable",
+    "summary": "Found commented-out code"
+  },
+  "EXE001": {
+    "fix": "None",
+    "linter": "flake8-executable",
+    "since": "v0.0.233",
+    "slug": "shebang-not-executable",
+    "status": "Stable",
+    "summary": "Shebang is present but file is not executable"
+  },
+  "EXE002": {
+    "fix": "None",
+    "linter": "flake8-executable",
+    "since": "v0.0.233",
+    "slug": "shebang-missing-executable-file",
+    "status": "Stable",
+    "summary": "The file is executable but no shebang is present"
+  },
+  "EXE003": {
+    "fix": "None",
+    "linter": "flake8-executable",
+    "since": "v0.0.229",
+    "slug": "shebang-missing-python",
+    "status": "Stable",
+    "summary": "Shebang should contain `python`, `pytest`, or `uv run`"
+  },
+  "EXE004": {
+    "fix": "Always",
+    "linter": "flake8-executable",
+    "since": "v0.0.229",
+    "slug": "shebang-leading-whitespace",
+    "status": "Stable",
+    "summary": "Avoid whitespace before shebang"
+  },
+  "EXE005": {
+    "fix": "None",
+    "linter": "flake8-executable",
+    "since": "v0.0.229",
+    "slug": "shebang-not-first-line",
+    "status": "Stable",
+    "summary": "Shebang should be at the beginning of the file"
+  }
+}

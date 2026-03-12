@@ -1,0 +1,58 @@
+{
+  "LOG001": {
+    "fix": "Sometimes",
+    "linter": "flake8-logging",
+    "since": "v0.2.0",
+    "slug": "direct-logger-instantiation",
+    "status": "Stable",
+    "summary": "Use `logging.getLogger()` to instantiate loggers"
+  },
+  "LOG002": {
+    "fix": "Sometimes",
+    "linter": "flake8-logging",
+    "since": "v0.2.0",
+    "slug": "invalid-get-logger-argument",
+    "status": "Stable",
+    "summary": "Use `__name__` with `logging.getLogger()`"
+  },
+  "LOG004": {
+    "fix": "Sometimes",
+    "linter": "flake8-logging",
+    "since": "0.9.5",
+    "slug": "log-exception-outside-except-handler",
+    "status": "Preview",
+    "summary": "`.exception()` call outside exception handlers"
+  },
+  "LOG007": {
+    "fix": "None",
+    "linter": "flake8-logging",
+    "since": "v0.2.0",
+    "slug": "exception-without-exc-info",
+    "status": "Stable",
+    "summary": "Use of `logging.exception` with falsy `exc_info`"
+  },
+  "LOG009": {
+    "fix": "Sometimes",
+    "linter": "flake8-logging",
+    "since": "v0.2.0",
+    "slug": "undocumented-warn",
+    "status": "Stable",
+    "summary": "Use of undocumented `logging.WARN` constant"
+  },
+  "LOG014": {
+    "fix": "Sometimes",
+    "linter": "flake8-logging",
+    "since": "0.12.0",
+    "slug": "exc-info-outside-except-handler",
+    "status": "Stable",
+    "summary": "`exc_info=` outside exception handlers"
+  },
+  "LOG015": {
+    "fix": "None",
+    "linter": "flake8-logging",
+    "since": "0.10.0",
+    "slug": "root-logger-call",
+    "status": "Stable",
+    "summary": "`{}()` call on root logger"
+  }
+}
