@@ -1,4 +1,5 @@
 from difflib import get_close_matches
+from importlib.metadata import PackageNotFoundError, version
 import webbrowser
 
 import typer
@@ -24,9 +25,30 @@ def _unknown_rule(rule_id: str) -> None:
     raise typer.Exit(code=1)
 
 
+def _version_callback(value: bool) -> None:
+    if not value:
+        return
+
+    try:
+        package_version = version("ruff-explain")
+    except PackageNotFoundError:
+        package_version = "unknown"
+
+    typer.echo(f"ruff-explain {package_version}")
+    raise typer.Exit()
+
+
 @app.command()
 def lookup(
     rule_id: str = typer.Argument(..., help="Ruff rule ID, for example FAST001."),
+    show_version: bool = typer.Option(
+        False,
+        "--version",
+        "-v",
+        callback=_version_callback,
+        is_eager=True,
+        help="Show the installed version and exit.",
+    ),
     open_page: bool = typer.Option(
         False, "--open", "-o", help="Open the docs page in your browser."
     ),

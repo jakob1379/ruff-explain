@@ -36,3 +36,15 @@ def test_fast001_open_skips_render_and_opens_browser(monkeypatch) -> None:
     assert opened == [
         "https://docs.astral.sh/ruff/rules/fast-api-redundant-response-model/"
     ]
+
+
+def test_version_flag_prints_version_and_exits(monkeypatch) -> None:
+    monkeypatch.setattr(cli, "version", lambda _package: "1.0.1")
+
+    long_result = runner.invoke(cli.app, ["--version"])
+    short_result = runner.invoke(cli.app, ["-v"])
+
+    assert long_result.exit_code == 0
+    assert long_result.stdout == "ruff-explain 1.0.1\n"
+    assert short_result.exit_code == 0
+    assert short_result.stdout == "ruff-explain 1.0.1\n"
