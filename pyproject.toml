@@ -1,6 +1,6 @@
 [project]
 name = "ruff-explain"
-version = "1.0.2"
+version = "1.1.0"
 description = "Render Ruff rule docs in the terminal or open them in a browser"
 readme = "README.md"
 authors = [
