@@ -1,3 +1,8 @@
+> :warning: **Archival notits**: this was a small utility to improve looking up ruff rules, and first after implementing it I found
+  that `ruff rule <rule>` actually exists and shows the exact same information, making this tool
+  extremely redundant, only improving experience a little in terms of rendering in the terminal which
+  can easily be solved using something like `glow`
+
 # ruff-explain
 
 `ruff-explain` looks up Ruff rule documentation by rule ID and renders the docs page directly in your terminal with Rich.
